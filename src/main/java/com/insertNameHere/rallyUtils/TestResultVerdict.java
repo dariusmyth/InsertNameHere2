@@ -8,7 +8,7 @@ public enum TestResultVerdict
 
 	private TestResultVerdict(String value)
 	{
-		this.setValue(value);
+		this.value=value;
 	}
 
 	public String getValue()
@@ -16,9 +16,5 @@ public enum TestResultVerdict
 		return value;
 	}
 
-	public void setValue(String value)
-	{
-		this.value = value;
-	}
-
+	
 }

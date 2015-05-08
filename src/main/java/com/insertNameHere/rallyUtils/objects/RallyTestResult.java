@@ -1,4 +1,4 @@
-package com.insertNameHere.rallyUtils;
+package com.insertNameHere.rallyUtils.objects;
 
 public class RallyTestResult {
 

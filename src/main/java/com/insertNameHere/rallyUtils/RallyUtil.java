@@ -11,6 +11,9 @@ import org.testng.Assert;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.insertNameHere.rallyUtils.objects.RallyDefectObject;
+import com.insertNameHere.rallyUtils.objects.RallyTestResult;
+import com.insertNameHere.utils.ApplicationLogger;
 import com.insertNameHere.utils.CommonFileUtils;
 import com.rallydev.rest.RallyRestApi;
 import com.rallydev.rest.request.CreateRequest;
@@ -21,13 +24,17 @@ import com.rallydev.rest.util.Fetch;
 import com.rallydev.rest.util.QueryFilter;
 
 public class RallyUtil {
-	public static RallyRestApi restApi;
+
+	private static RallyRestApi restApi;
 	protected static SimpleDateFormat dfRally = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.SSS'Z'");
-	public static String userRef = "";
-	public static String testSetRef = "";
-	public static String testBuild = CommonFileUtils.getValueFromConfigFile("versionString");
-	public static String defaultComment = "Test case passed and rally result updated by client automation framework.";
-	private static String testSetID = CommonFileUtils.getValueFromConfigFile("testSetID");
+	private static final String userRef = "";
+	private static final String testBuild = CommonFileUtils.getValueFromConfigFile("versionString");
+	private static final String defaultComment = "Test case passed and rally result updated by client automation framework.";
+	private static final String testSetID = CommonFileUtils.getValueFromConfigFile("testSetID");
+	private static final String rallyProjectName = CommonFileUtils.getValueFromConfigFile("RallyProject");
+	private static final String rallyUserName = CommonFileUtils.getValueFromConfigFile("RallyUsername");
+	private static final String rallyUserPassword = CommonFileUtils.getValueFromConfigFile("RallyPassword");
+	private static ApplicationLogger appLogger = new ApplicationLogger(RallyUtil.class);
 
 	/**
 	 * rally connection setup this is where the database connection, usernmane
@@ -35,17 +42,18 @@ public class RallyUtil {
 	 */
 	@SuppressWarnings("deprecation")
 	public static void setupRallyConnection() {
+
 		// the following code will not report connection failed even if the
 		// credentials are not correct
 		try {
-			System.out.println("Opening connection to Rally...");
-			restApi = new RallyRestApi(new URI("https://rally1.rallydev.com"), "qaautomation@kno.com", "(Test123)");
-			restApi.setApplicationName("iPad Kno Textbooks");
+			appLogger.logInfo("Opening connection to Rally...");
+			restApi = new RallyRestApi(new URI("https://rally1.rallydev.com"), rallyUserName, rallyUserPassword);
+			restApi.setApplicationName(rallyProjectName);
 
-			System.out.println("restApi se application name");
+			appLogger.logInfo("restApi se application name");
 		} catch (URISyntaxException e) {
 			Assert.assertTrue(e != null, "Connection to Rally failed");
-			System.err.println("connection entered into Catch exception");
+			appLogger.logError("connection entered into Catch exception");
 		}
 	}
 
@@ -54,12 +62,51 @@ public class RallyUtil {
 	 */
 	public static void closeRallyConnection() {
 		try {
-			System.out.println("Closing connection to Rally...");
+			appLogger.logInfo("Closing connection to Rally...");
 			restApi.close();
-			System.out.println("Connection to Rally Closed");
+			appLogger.logInfo("Connection to Rally Closed");
 		} catch (IOException e) {
 			Assert.assertTrue(e != null, "Unable to close connection to Rally");
-			System.err.println("Connection close entered into Catch exception");
+			appLogger.logError("Connection close entered into Catch exception");
+		}
+	}
+
+	public synchronized static void createDefectInRally(String testID, String defectName, String defectDescription) {
+		setupRallyConnection();
+		try {
+			
+			String state = "";
+			String scheduleState = "";
+			// Assert.assertTrue(userRef.length() > 0,
+			// "Could not obtain a reference from Rally for user " + user);
+			// testSetRef - this is obtained at the start of the test runs in
+			// the @BeforeClass
+			RallyDefectObject rallyDefectObj = new RallyDefectObject(defectName, defectDescription, state, scheduleState);
+
+			CreateRequest req = new CreateRequest("defect", (JsonObject) new Gson().toJsonTree(rallyDefectObj));
+			// System.out.println(req.getBody());
+
+			if (!defectName.isEmpty() && defectDescription != null) // include
+																	// here the
+																	// condition
+																	// for rally
+																	// update or
+																	// not
+			{
+				CreateResponse res = restApi.create(req);
+
+				Assert.assertTrue(res.wasSuccessful());
+				appLogger.logInfo("Rally Update possibly successfull.");
+
+			} else {
+				appLogger.logError("Rally was not updated");
+			}
+
+		} catch (IOException e) {
+			appLogger.logError("Cannot create defect for test " + testID);
+			appLogger.logError("Encountered error: " + e.getMessage());
+		} finally {
+			closeRallyConnection();
 		}
 	}
 
@@ -91,17 +138,15 @@ public class RallyUtil {
 				CreateResponse res = restApi.create(req);
 
 				Assert.assertTrue(res.wasSuccessful());
-				System.out.println("Rally Update possibly successfull.");
+				appLogger.logInfo("Rally Update possibly successfull.");
 
 			} else {
-				System.err.println("Rally was not updated");
+				appLogger.logError("Rally was not updated");
 			}
 
 		} catch (IOException e) {
-			// Assert.fail("Test ID " + testID + " not found");
-			System.err.println("Cannot update test results for test " + testID);
-			System.err.println("Encountered error: " + e);
-			// log("Cannot update test results for test " + testID);
+			appLogger.logError("Cannot update test results for test " + testID);
+			appLogger.logError("Encountered error: " + e.getMessage());
 		}
 	}
 
@@ -133,14 +178,13 @@ public class RallyUtil {
 			testSetQueryResponse = restApi.query(testSetRequest);
 			JsonArray resultArray = testSetQueryResponse.getResults();
 			if (resultArray.size() == 0) {
-				System.out.println("Test Set " + testSetID + "does not exist.");
-				// log("Cannot find: " + testID);
+				appLogger.logInfo("Test Set " + testSetID + "does not exist.");
 				return "";
 			}
 			testSetRef = resultArray.get(0).getAsJsonObject().get("_ref").toString();
 			return testSetRef;
 		} catch (IOException e) {
-			e.printStackTrace();
+			appLogger.logError(e.getMessage());
 		}
 		return "";
 	}
@@ -155,13 +199,12 @@ public class RallyUtil {
 			testCaseQueryResponse = restApi.query(testCaseRequest);
 			JsonArray resultArray = testCaseQueryResponse.getResults();
 			if (resultArray.size() == 0) {
-				System.out.println("Test " + testCaseID + "does not exist anymore");
-				// log("Cannot find: " + testID);
+				appLogger.logInfo("Test " + testCaseID + "does not exist anymore");
 				return "";
 			}
 			return resultArray.get(0).getAsJsonObject().get("_ref").toString();
 		} catch (IOException e) {
-			e.printStackTrace();
+			appLogger.logError(e.getMessage());
 		}
 		return "";
 	}

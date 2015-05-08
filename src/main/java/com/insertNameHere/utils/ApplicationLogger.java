@@ -3,11 +3,11 @@ package com.insertNameHere.utils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
-public class Log4jUtils {
+public class ApplicationLogger {
 
 	private Logger logger;
 
-	public <T> Log4jUtils(Class<T> clazz) {
+	public <T> ApplicationLogger(Class<T> clazz) {
 		DOMConfigurator.configure("log4j.xml");
 		logger = Logger.getLogger(clazz);
 	}

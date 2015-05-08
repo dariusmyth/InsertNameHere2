@@ -1,5 +1,11 @@
 package com.insertNameHere.selenium.utils;
 
+import org.openqa.selenium.By;
+
 public class SeleniumCommonMethods {
-//TODO implementation
+
+
+public void waitForElemnetToBeDisplayed(By by){
+	
+}
 }
