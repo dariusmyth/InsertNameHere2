@@ -6,7 +6,7 @@ import org.testng.Assert;
 
 import com.insertNameHere.robotFrameworkUtils.customErrors.ContinueOnErrorCustom;
 import com.insertNameHere.robotFrameworkUtils.customErrors.StopOnErrorCustom;
-import com.insertNameHere.robotFrameworkUtils.implementation.JavaListener;
+import com.insertNameHere.robotFrameworkUtils.listeners.JavaListener;
 import com.insertNameHere.utils.Log4jUtils;
 
 
