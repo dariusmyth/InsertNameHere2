@@ -1,0 +1,21 @@
+*** Settings ***
+Library    com.insertNameHere.keyWords.CustomKey
+
+*** Test Cases ***
+Hello World
+    Log  Hello, World!
+    
+*** Test Cases ***
+Hello World2
+    Log  Hello, World!
+    customKeyTest
+    
+*** Test Cases ***
+Continue
+    Continue On Failure
+    
+*** Test Cases ***
+Stop
+   stopOnFailure
+    
+    
