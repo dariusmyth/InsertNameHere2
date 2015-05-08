@@ -16,7 +16,7 @@ public class EmagHomePage extends HomePageAbstract {
 
 	@Override
 	public void navigateToMainPage() {
-		driver.get("pageURL");
+		driver.get(pageURL);
 		
 	}
 
