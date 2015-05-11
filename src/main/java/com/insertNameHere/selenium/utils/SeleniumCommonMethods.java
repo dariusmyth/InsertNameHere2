@@ -4,8 +4,7 @@ import org.openqa.selenium.By;
 
 public class SeleniumCommonMethods {
 
+	public void waitForElemnetToBeDisplayed(By by) {
 
-public void waitForElemnetToBeDisplayed(By by){
-	
-}
+	}
 }

@@ -1,5 +1,7 @@
 package com.insertNameHere.robotFrameworkUtils.listeners;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 import com.insertNameHere.robotFrameworkUtils.mainInterfaces.RobotListenerGeneralInterface;
@@ -15,6 +17,8 @@ public class RoboJavaListenerImplementation implements RobotListenerGeneralInter
 	@Override
 	public void endSuite(String name, Map attributes) {
 		System.out.println("Darius - End Suite");
+		
+		
 
 	}
 
@@ -50,7 +54,8 @@ public class RoboJavaListenerImplementation implements RobotListenerGeneralInter
 
 	@Override
 	public void outputFile(String path) {
-		System.out.println("Darius - Output  file");
+		System.out.println("Darius - Output file");
+		
 	}
 
 	@Override

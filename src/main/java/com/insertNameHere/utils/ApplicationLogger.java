@@ -13,19 +13,19 @@ public class ApplicationLogger {
 	}
 
 	public void logInfo(String message) {
-		logger.info(message);
+		logger.info(String.format("Thread %s - %s", Thread.currentThread().getId(), message));
 	}
 
 	public void logDebug(String message) {
-		logger.debug(message);
+		logger.debug(String.format("Thread %s - %s", Thread.currentThread().getId(), message));
 	}
 
 	public void logError(String message) {
-		logger.error(message);
+		logger.error(String.format("Thread %s - %s", Thread.currentThread().getId(), message));
 	}
 
 	public void logWarning(String message) {
-		logger.warn(message);
+		logger.warn(String.format("Thread %s - %s", Thread.currentThread().getId(), message));
 	}
 
 }

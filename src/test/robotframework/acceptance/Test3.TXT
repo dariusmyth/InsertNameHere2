@@ -1,18 +1,36 @@
 *** Settings ***
 Library    com.insertNameHere.keyWords.CustomKey
 
+
+Test Setup  Log   HelloSetup
+Test Teardown  Log    CloseingTeardown
+
+
+*** Variables ***
+
+${BROWSER}  firefox
+${REMOTE_URL}
+${DESIRED_CAPABILITIES}
+@{msg}  Hello, World!
+${OUTPUT DIR}   D:/TestOutput
+
+
 *** Test Cases ***
+
 Hello World
+	[Tags]  Login
     Log  Hello, World!
     
-*** Test Cases ***
-Hello World2
-    Log  Hello, World!
-    customKeyTest
+
+Scenario: As an editor I can add new translation
+	Given Log      @{msg}
+	When Continue On Failure
+	Then custom Key Test
     
 *** Test Cases ***
 Continue
     Continue On Failure
+    Log  Hello, World!
     
 *** Test Cases ***
 Stop

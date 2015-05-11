@@ -5,5 +5,10 @@ public class ContinueOnErrorCustom extends RuntimeException {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
 	public static final boolean ROBOT_CONTINUE_ON_FAILURE = true;
+	
+    public static final boolean ROBOT_SUPPRESS_NAME = true;
 }

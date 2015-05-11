@@ -25,10 +25,11 @@ public class JavaListener {
 		}
 	}
 
-	public void startSuite(String name, Map attrs) throws IOException {
+	public void startSuite(String name, @SuppressWarnings("rawtypes") Map attrs) throws IOException {
 		outfile.write(name + " '" + attrs.get("doc") + "'\n");
 	}
 
+	@SuppressWarnings("rawtypes")
 	public void startTest(String name, Map attrs) throws IOException {
 		outfile.write("- " + name + " '" + attrs.get("doc") + "' [ ");
 		List tags = (List) attrs.get("tags");
@@ -38,7 +39,7 @@ public class JavaListener {
 		outfile.write(" ] :: ");
 	}
 
-	public void endTest(String name, Map attrs) throws IOException {
+	public void endTest(String name, @SuppressWarnings("rawtypes") Map attrs) throws IOException {
 		String status = attrs.get("status").toString();
 		if (status.equals("PASS")) {
 			outfile.write("PASS\n");
@@ -47,7 +48,7 @@ public class JavaListener {
 		}
 	}
 
-	public void endSuite(String name, Map attrs) throws IOException {
+	public void endSuite(String name, @SuppressWarnings("rawtypes") Map attrs) throws IOException {
 		outfile.write(attrs.get("status") + "\n" + attrs.get("message") + "\n");
 	}
 

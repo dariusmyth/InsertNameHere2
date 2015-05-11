@@ -5,8 +5,9 @@ import java.util.List;
 import org.testng.Assert;
 
 import com.insertNameHere.robotFrameworkUtils.customErrors.ContinueOnErrorCustom;
+import com.insertNameHere.robotFrameworkUtils.customErrors.FatalRobotErrorCustom;
 import com.insertNameHere.robotFrameworkUtils.customErrors.StopOnErrorCustom;
-import com.insertNameHere.robotFrameworkUtils.listeners.JavaListener;
+import com.insertNameHere.robotFrameworkUtils.listeners.RoboJavaListenerImplementation;
 import com.insertNameHere.utils.ApplicationLogger;
 
 
@@ -16,7 +17,7 @@ public class CustomKey  {
 	public static final String ROBOT_LIBRARY_SCOPE = "GLOBAL";  
 	public static final String DEFAULT_FILENAME = "listen_java.txt";
 
-    public static final JavaListener ROBOT_LIBRARY_LISTENER = new JavaListener(DEFAULT_FILENAME);
+    public static final RoboJavaListenerImplementation ROBOT_LIBRARY_LISTENER = new RoboJavaListenerImplementation();
     private ApplicationLogger LOG=new ApplicationLogger(CustomKey.class);
     
     public CustomKey(){
@@ -32,7 +33,7 @@ public class CustomKey  {
 		Assert.assertTrue(1==2);
 		}catch(AssertionError e){
 			System.out.println("Darius - Continued even thought it failed with message "+e);
-			throw new ContinueOnErrorCustom();
+			throw new StopOnErrorCustom();
 		}
 		System.out.println("Hello AFter fail");
 		LOG.logInfo("SYCCESS continue");
