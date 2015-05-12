@@ -53,4 +53,20 @@ public class CustomKey  {
 	public void verifyEquals(List<String> i, List<String> f){
 		Assert.assertEquals(i, f,"Error");
 	}
+	
+	public void setVariables(String browser, String URL){
+		LOG.logInfo("Setting variables Browser: "+browser+ " and URL: "+URL); 
+	}
+	
+	public void openBrowser(){
+		LOG.logInfo("Open Broser"); 
+	}
+	
+	public void closeDriver(){
+		LOG.logInfo("Close Browser"); 
+	}
+	
+	public void setupTest(){
+		LOG.logInfo("Setup test");
+	}
 }

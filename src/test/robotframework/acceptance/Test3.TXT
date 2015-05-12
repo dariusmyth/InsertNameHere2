@@ -1,7 +1,6 @@
 *** Settings ***
 Library    com.insertNameHere.keyWords.CustomKey
 
-
 Test Setup  Log   HelloSetup
 Test Teardown  Log    CloseingTeardown
 
@@ -17,7 +16,7 @@ ${OUTPUT DIR}   D:/TestOutput
 
 *** Test Cases ***
 
-Hello World
+Hello_World
 	[Tags]  Login
     Log  Hello, World!
     

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.7.0_80-ea)" generated="20150512 23:54:57.202">
+<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases" id="s1" name="SeleniumTestCases">
+<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases\SeleniumCaseOne.txt" id="s1-s1" name="SeleniumCaseOne">
+<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Set Variables">
+<doc></doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>${REMOTE_URL}</arg>
+</arguments>
+<status status="PASS" endtime="20150512 23:54:58.146" starttime="20150512 23:54:58.131"></status>
+</kw>
+<test id="s1-s1-t1" name="Scenario: As an editor I can add new translation">
+<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Open Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:54:58.162" starttime="20150512 23:54:58.146"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Given Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{msg}</arg>
+</arguments>
+<msg timestamp="20150512 23:54:58.162" level="INFO">Hello</msg>
+<msg timestamp="20150512 23:54:58.162" level="INFO">Darius - LOG Message</msg>
+<status status="PASS" endtime="20150512 23:54:58.162" starttime="20150512 23:54:58.162"></status>
+</kw>
+<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.When Custom key Test">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:54:58.178" level="INFO">Hello crappy</msg>
+<status status="PASS" endtime="20150512 23:54:58.178" starttime="20150512 23:54:58.178"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Then Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{msg}</arg>
+</arguments>
+<msg timestamp="20150512 23:54:58.193" level="INFO">Hello</msg>
+<msg timestamp="20150512 23:54:58.193" level="INFO">Darius - LOG Message</msg>
+<status status="PASS" endtime="20150512 23:54:58.209" starttime="20150512 23:54:58.193"></status>
+</kw>
+<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Setup Test">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:54:58.209" starttime="20150512 23:54:58.209"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" critical="yes" endtime="20150512 23:54:58.225" starttime="20150512 23:54:58.146"></status>
+</test>
+<test id="s1-s1-t2" name="Scenario: As an editor I can add the newsest translation test">
+<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Open Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:54:58.240" starttime="20150512 23:54:58.225"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Given Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{msg}</arg>
+</arguments>
+<msg timestamp="20150512 23:54:58.240" level="INFO">Hello</msg>
+<msg timestamp="20150512 23:54:58.256" level="INFO">Darius - LOG Message</msg>
+<status status="PASS" endtime="20150512 23:54:58.256" starttime="20150512 23:54:58.240"></status>
+</kw>
+<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.When Custom key Test">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20150512 23:54:58.256" level="INFO">Hello crappy</msg>
+<status status="PASS" endtime="20150512 23:54:58.271" starttime="20150512 23:54:58.256"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Then Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{msg}</arg>
+</arguments>
+<msg timestamp="20150512 23:54:58.271" level="INFO">Hello</msg>
+<msg timestamp="20150512 23:54:58.271" level="INFO">Darius - LOG Message</msg>
+<status status="PASS" endtime="20150512 23:54:58.271" starttime="20150512 23:54:58.271"></status>
+</kw>
+<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Setup Test">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:54:58.287" starttime="20150512 23:54:58.271"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" critical="yes" endtime="20150512 23:54:58.287" starttime="20150512 23:54:58.225"></status>
+</test>
+<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Close Driver">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150512 23:54:58.287" starttime="20150512 23:54:58.287"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150512 23:54:58.303" starttime="20150512 23:54:57.787"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150512 23:54:58.303" starttime="20150512 23:54:57.218"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" id="s1" fail="0" name="SeleniumTestCases">SeleniumTestCases</stat>
+<stat pass="2" id="s1-s1" fail="0" name="SeleniumCaseOne">SeleniumTestCases.SeleniumCaseOne</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

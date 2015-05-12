@@ -1,0 +1,21 @@
+*** Settings ***
+Library    com.insertNameHere.keyWords.CustomKey
+Suite Precondition		setVariables  ${BROWSER}  ${REMOTE_URL}
+Test Postcondition  	Setup Test
+Test Precondition		Open browser
+Suite Postcondition		Close driver
+*** Variables ***
+
+${BROWSER}  firefox
+${REMOTE_URL}  www.emag.ro
+@{msg}  Hello
+
+
+*** Test Cases ***
+Scenario: As an editor I can add new translation
+	Given Log      @{msg}
+	When Custom key Test
+	Then Log	   @{msg}
+	
+
+	

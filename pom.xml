@@ -6,6 +6,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
+	<properties>
+		<testCasesDirectory>${project.basedir}/src/test/robotframework/acceptance/SeleniumTestCases/</testCasesDirectory>
+		<outputDirectory>${project.basedir}/src/reports</outputDirectory>
+<!-- 		<tests>Hello_World</tests> -->
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -85,10 +91,13 @@
 						</goals>
 					</execution>
 				</executions>
+
 				<configuration>
-					<testCasesDirectory>${project.basedir}/src/test/robotframework/acceptance/</testCasesDirectory>
+					<!-- <testCasesDirectory>${testCasesDirectory}</testCasesDirectory> -->
+					<outputDirectory>${outputDirectory}</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
+
 	</build>
 </project>
