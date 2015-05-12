@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.8.0_31)" generated="20150511 23:42:12.943">
+<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\Test3.TXT" name="Test3" id="s1">
+<test name="Hello World" id="s1-t1">
+<kw type="setup" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HelloSetup</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.209">HelloSetup</msg>
+<status endtime="20150511 23:42:13.209" starttime="20150511 23:42:13.209" status="PASS"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello, World!</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.209">Hello, World!</msg>
+<status endtime="20150511 23:42:13.209" starttime="20150511 23:42:13.209" status="PASS"></status>
+</kw>
+<kw type="teardown" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>CloseingTeardown</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.224">CloseingTeardown</msg>
+<status endtime="20150511 23:42:13.224" starttime="20150511 23:42:13.209" status="PASS"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Login</tag>
+</tags>
+<status critical="yes" endtime="20150511 23:42:13.224" starttime="20150511 23:42:13.209" status="PASS"></status>
+</test>
+<test name="Scenario: As an editor I can add new translation" id="s1-t2">
+<kw type="setup" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HelloSetup</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.224">HelloSetup</msg>
+<status endtime="20150511 23:42:13.224" starttime="20150511 23:42:13.224" status="PASS"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Given Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{msg}</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.240">Hello, World!</msg>
+<status endtime="20150511 23:42:13.240" starttime="20150511 23:42:13.224" status="PASS"></status>
+</kw>
+<kw type="kw" name="When Continue On Failure">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20150511 23:42:13.240">No keyword with name 'When Continue On Failure' found.</msg>
+<status endtime="20150511 23:42:13.240" starttime="20150511 23:42:13.240" status="FAIL"></status>
+</kw>
+<kw type="teardown" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>CloseingTeardown</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.255">CloseingTeardown</msg>
+<status endtime="20150511 23:42:13.255" starttime="20150511 23:42:13.240" status="PASS"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150511 23:42:13.255" starttime="20150511 23:42:13.224" status="FAIL">No keyword with name 'When Continue On Failure' found.</status>
+</test>
+<test name="Continue" id="s1-t3">
+<kw type="setup" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HelloSetup</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.271">HelloSetup</msg>
+<status endtime="20150511 23:42:13.271" starttime="20150511 23:42:13.271" status="PASS"></status>
+</kw>
+<kw type="kw" name="Continue On Failure">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20150511 23:42:13.287">No keyword with name 'Continue On Failure' found.</msg>
+<status endtime="20150511 23:42:13.287" starttime="20150511 23:42:13.287" status="FAIL"></status>
+</kw>
+<kw type="teardown" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>CloseingTeardown</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.287">CloseingTeardown</msg>
+<status endtime="20150511 23:42:13.287" starttime="20150511 23:42:13.287" status="PASS"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150511 23:42:13.287" starttime="20150511 23:42:13.255" status="FAIL">No keyword with name 'Continue On Failure' found.</status>
+</test>
+<test name="Stop" id="s1-t4">
+<kw type="setup" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>HelloSetup</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.302">HelloSetup</msg>
+<status endtime="20150511 23:42:13.302" starttime="20150511 23:42:13.302" status="PASS"></status>
+</kw>
+<kw type="kw" name="stopOnFailure">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20150511 23:42:13.318">No keyword with name 'stopOnFailure' found.</msg>
+<status endtime="20150511 23:42:13.318" starttime="20150511 23:42:13.318" status="FAIL"></status>
+</kw>
+<kw type="teardown" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>CloseingTeardown</arg>
+</arguments>
+<msg level="INFO" timestamp="20150511 23:42:13.318">CloseingTeardown</msg>
+<status endtime="20150511 23:42:13.318" starttime="20150511 23:42:13.318" status="PASS"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150511 23:42:13.318" starttime="20150511 23:42:13.302" status="FAIL">No keyword with name 'stopOnFailure' found.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status endtime="20150511 23:42:13.318" starttime="20150511 23:42:12.943" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3">Critical Tests</stat>
+<stat pass="1" fail="3">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" doc="" links="" combined="" info="">Login</stat>
+</tag>
+<suite>
+<stat pass="1" fail="3" name="Test3" id="s1">Test3</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20150511 23:42:13.177">Error in file 'D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\Test3.TXT': Importing test library 'com.insertNameHere.keyWords.CustomKey' failed: ImportError: No module named insertNameHere
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\robotframework-2.8.7.jar\Lib\robot\libraries
+  D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\robotframework-2.8.7.jar\Lib
+  D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\Lib
+  __classpath__
+  __pyclasspath__/
+  .
+  D:\Python27
+  D:\Python27\Scripts
+CLASSPATH:
+  robotframework-2.8.7.jar</msg>
+</errors>
+</robot>

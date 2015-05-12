@@ -85,6 +85,9 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<testCasesDirectory>${project.basedir}/src/test/robotframework/acceptance/</testCasesDirectory>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
