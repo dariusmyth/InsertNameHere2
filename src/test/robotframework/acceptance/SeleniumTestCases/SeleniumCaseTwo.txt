@@ -1,25 +1,17 @@
 *** Settings ***
-Library    com.insertNameHere.keyWords.CustomKey
-Suite Precondition		setVariables  ${BROWSER}  ${REMOTE_URL}
-Test Postcondition  	Setup Test
-Test Precondition		Open browser
+Library    com.insertNameHere.keyWords.CustomKey  firefox  http://localhost:4444/wd/hub
+Suite Precondition		Initialize driver 	
+Test Postcondition  	testStatus  ${TEST STATUS}  ${TEST NAME}
 Suite Postcondition		Close driver
 *** Variables ***
 
-${BROWSER}  firefox
-${REMOTE_URL}  www.emag.ro
+${homePage}  emag
 @{msg}  Hello
 
 
 *** Test Cases ***
 Scenario: As an editor I can add new translation
-	Given Log      @{msg}
-	When Custom key Test
-	Then Log	   @{msg}
-	
-Scenario: As an editor I can add new translation
-	Given Log      @{msg}
-	When Custom key Test
-	Then Log	   @{msg}
-	
+	Given The user navigates to the page  ${homePage}
+	When The page is loaded
+	Then The menu bar is displayed
 	

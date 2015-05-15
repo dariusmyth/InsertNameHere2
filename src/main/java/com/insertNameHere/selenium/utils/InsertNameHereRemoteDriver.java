@@ -17,7 +17,7 @@ public class InsertNameHereRemoteDriver extends RemoteWebDriver{
 	private static final long DEFAULT_SLEEP = 80;
 	private static int MAX_RECURSION_DEPTH = 20;
 	private static DesiredCapabilities capabilities;
-
+	
 	public InsertNameHereRemoteDriver(URL remoteAddress, Capabilities desiredCapabilities) {
 		super(remoteAddress, desiredCapabilities);
 	}

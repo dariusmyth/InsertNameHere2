@@ -1,24 +1,20 @@
 package testPack;
 
-import org.testng.Assert;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-
-import com.google.gson.JsonObject;
-import com.insertNameHere.rallyUtils.RallyID;
 import com.insertNameHere.rallyUtils.RallyUtil;
-import com.rallydev.rest.request.CreateRequest;
-import com.rallydev.rest.response.CreateResponse;
+import com.insertNameHere.rallyUtils.TestResultVerdict;
 
 
 public class TestngTestingStuff {
 	
-	public void firstTestOfPack(){
-		Assert.assertEquals(1, 1);
+	public static void main(String[] args) {
+		String testName="Scenario: As an editor I can add new translation";
+		String defectDescription =RallyUtil.getTestCaseDescription(testName);
+		RallyUtil.createTestResult(RallyUtil.getTestCaseIDForTestCaseWithName(testName), TestResultVerdict.FAIL.getValue(), "Auto test");
+		System.err.println("TEst case description: "+defectDescription);
+		System.err.println("New Defect from Rally: "+RallyUtil.createOrOpenDefectInRally(testName, defectDescription));
+		
 	}
 	
-
-	public void seccondTest(){
-		RallyUtil.createTestCaseInRally("DE2", "Defect Name", "Defect Description", "State");
-	}
+	
+	
 }

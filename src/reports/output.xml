@@ -1,127 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.7.0_80-ea)" generated="20150512 23:54:57.202">
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.7.0_80-ea)" generated="20150514 01:25:23.069">
 <suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases" id="s1" name="SeleniumTestCases">
-<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases\SeleniumCaseOne.txt" id="s1-s1" name="SeleniumCaseOne">
-<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Set Variables">
+<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases\SeleniumCaseTwo.txt" id="s1-s1" name="SeleniumCaseTwo">
+<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Initialize Driver">
 <doc></doc>
 <arguments>
-<arg>${BROWSER}</arg>
-<arg>${REMOTE_URL}</arg>
 </arguments>
-<status status="PASS" endtime="20150512 23:54:58.146" starttime="20150512 23:54:58.131"></status>
+<msg timestamp="20150514 01:25:28.362" level="INFO">log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [debug].
+log4j: root level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.DailyRollingFileAppender]
+log4j: Setting property [file] to [src/logs/app.log].
+log4j: Setting property [datePattern] to ['.'yyyy-MM-dd].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [[%p] %d %c %M - %m%n].
+log4j: setFile called: src/logs/app.log, true
+log4j: setFile ended
+log4j: Appender [RollingAppender] to be rolled at midnight.
+log4j: Adding appender named [RollingAppender] to category [root].
+2015-05-14 01:25:24 INFO  InsertNameHereSeleniumDriver:16 - Thread 1 - Webdriver setup initiated...
+2015-05-14 01:25:24 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2015-05-14 01:25:24 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2015-05-14 01:25:24 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}-&gt;http://localhost:4444][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2015-05-14 01:25:24 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2015-05-14 01:25:24 DEBUG MainClientExec:234 - Opening connection {}-&gt;http://localhost:4444
+2015-05-14 01:25:24 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:4444
+2015-05-14 01:25:24 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:63582&lt;-&gt;127.0.0.1:4444
+2015-05-14 01:25:24 DEBUG MainClientExec:255 - Executing request POST /wd/hub/session HTTP/1.1
+2015-05-14 01:25:24 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2015-05-14 01:25:24 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2015-05-14 01:25:24 DEBUG headers:124 - http-outgoing-0 &gt;&gt; POST /wd/hub/session HTTP/1.1
+2015-05-14 01:25:24 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=utf-8
+2015-05-14 01:25:24 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Length: 1448
+2015-05-14 01:25:24 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Host: localhost:4444
+2015-05-14 01:25:24 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+2015-05-14 01:25:24 DEBUG headers:127 - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
+2015-05-14 01:25:24 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "POST /wd/hub/session HTTP/1.1[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Type: application/json; charset=utf-8[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Length: 1448[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Host: localhost:4444[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "[\r][\n]"
+2015-05-14 01:25:24 DEBUG wire:86 - http-outgoing-0 &gt;&gt; "{"desiredCapabilities":{"platform":"WINDOWS","firefox_profile":"UEsDBBQACAgIACwLrkYAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WwY7bOAy99ysWOXWBjdBu0Ut7\nmu3MoUCBLjoo9ijIMh1rIkuCSMWTvy9lJ80kY8vG3mKHFMnH956cEKIMEZq3G3gmcGi8Q5FCrQiE\n82Sa408O2fz1R6Mswp+f36RLBoJO0dBR9Co6CY4gGreTw2sQ2PpeeqdhIVljEOBUZWcCaziQ9xYF\nxOij5v68hVNGzSkU001GFX3PT8JBT6oKavcyfKLC68mL4efja9+J3rja96JOXSi2xKeqCMFHYoRE\nC8pSOz4L63e7/PI02UOptG8aaxxsVQgolLWMcHWUNTQqWZouzE3WBvOZ0gdwsk7DkqxXy2hU1uu9\nNUjrAEGekVIQGXGOfHcdlZe4NyQILHRA8SgiPIGmOcS48U49S91G34FEHU0gGZOTZLp8/Ieb8wPH\nBULBK5edr5UtN80Qrtr2iziVyE8HnWdzQL2P+045hiCegS+S9Axay1OegNuoyif6VFnl9pvrrFMB\nMVbYnvnAh1DChe2Airo9zVIe47KiVXvnFvZiIBcrblQEJ/w9Hfzw89ud8AcWs6mnkXlBwIz4/Qji\no+YKecT37woHfxBKawhzpJpxrB7Ufi0iI82G82cmRNXA8DurughgwRU46GD0AjeLBrwmxYI6rLfs\nHqo6Gl6dHEGWyTHEyGBIDZGwyHMmhcumI87iyMX+a8E9ZgFwEzMQnWxgWf9P6qDGKOYiDfTJJb66\nL6OxTnZ31lNLFHKdLbuwY1PK6dsAcZv3MNx/t7S7ygytwfa4zX8Hhbi14HbUZop8/DhL7rPxl+6N\n0rrKojxZw1rl5r6iU/Y1rdHsnHds1h10FcTH4XHGa64JHbw1+ijyy8dUdQbz3P8OL+8uKi20N17g\nIkVbdsULMUcspVPEjxIOrIlpWv4GtjEW+Jfw0fA25NhzptdCPFI0muRtWmEaHgWHPX53X6zHZZEh\nJr75LiJjANPAxYlxbm4RtjSr8715wm4zY1UtWCt0C3p/P35E/DP+87/XW/x8mXTITlkGZcHpCk6Z\nQraVYt0VPtuYiPQjuTWuiXlaksaVdJiNa6wh+UNNPiFLLHPejOJZkvrBQJ+l3pnnRTRhQB7JM4oR\nBtI0fEtJHRW2qzn5nW1gzfRXna3+yn994U6m/gJQSwcIXmf/k08DAACQDAAAUEsBAhQAFAAICAgA\nLAuuRl5n/5NPAwAAkAwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA\nhAMAAAAA","browserName":"firefox","takesScreenshot":true}}"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Date: Wed, 13 May 2015 22:25:24 GMT[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Cache-Control: no-cache[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Length: 545[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Type: application/json; charset=utf-8[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:86 - http-outgoing-0 &lt;&lt; "{"state":null,"sessionId":"a51caad3-0aa0-4617-9902-fd8adfda4cff","hCode":246263,"value":{"applicationCacheEnabled":true,"rotatable":false,"handlesAlerts":true,"databaseEnabled":true,"version":"37.0.2","platform":"WINDOWS","nativeEvents":false,"acceptSslCerts":true,"webdriver.remote.sessionid":"a51caad3-0aa0-4617-9902-fd8adfda4cff","webStorageEnabled":true,"locationContextEnabled":true,"browserName":"firefox","takesScreenshot":true,"javascriptEnabled":true,"cssSelectorsEnabled":true},"class":"org.openqa.selenium.remote.Response","status":0}"
+2015-05-14 01:25:28 DEBUG headers:113 - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Date: Wed, 13 May 2015 22:25:24 GMT
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Cache-Control: no-cache
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Length: 545
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Type: application/json; charset=utf-8
+2015-05-14 01:25:28 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2015-05-14 01:25:28 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}-&gt;http://localhost:4444] can be kept alive indefinitely
+2015-05-14 01:25:28 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2015-05-14 01:25:28 INFO  InsertNameHereSeleniumDriver:16 - Thread 1 - Webdriver initiated successfully....
+2015-05-14 01:25:28 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2015-05-14 01:25:28 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2015-05-14 01:25:28 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}-&gt;http://localhost:4444][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2015-05-14 01:25:28 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2015-05-14 01:25:28 DEBUG MainClientExec:207 - Stale connection check
+2015-05-14 01:25:28 DEBUG wire:86 - http-outgoing-0 &lt;&lt; "[read] I/O error: Read timed out"
+2015-05-14 01:25:28 DEBUG MainClientExec:255 - Executing request POST /wd/hub/session/a51caad3-0aa0-4617-9902-fd8adfda4cff/timeouts/implicit_wait HTTP/1.1
+2015-05-14 01:25:28 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2015-05-14 01:25:28 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2015-05-14 01:25:28 DEBUG headers:124 - http-outgoing-0 &gt;&gt; POST /wd/hub/session/a51caad3-0aa0-4617-9902-fd8adfda4cff/timeouts/implicit_wait HTTP/1.1
+2015-05-14 01:25:28 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=utf-8
+2015-05-14 01:25:28 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Length: 12
+2015-05-14 01:25:28 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Host: localhost:4444
+2015-05-14 01:25:28 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+2015-05-14 01:25:28 DEBUG headers:127 - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
+2015-05-14 01:25:28 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "POST /wd/hub/session/a51caad3-0aa0-4617-9902-fd8adfda4cff/timeouts/implicit_wait HTTP/1.1[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Type: application/json; charset=utf-8[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Length: 12[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Host: localhost:4444[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:86 - http-outgoing-0 &gt;&gt; "{"ms":10000}"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Date: Wed, 13 May 2015 22:25:28 GMT[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Cache-Control: no-cache[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Length: 157[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Type: application/json; charset=utf-8[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "[\r][\n]"
+2015-05-14 01:25:28 DEBUG wire:86 - http-outgoing-0 &lt;&lt; "{"state":"success","sessionId":"a51caad3-0aa0-4617-9902-fd8adfda4cff","hCode":22055860,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}"
+2015-05-14 01:25:28 DEBUG headers:113 - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Date: Wed, 13 May 2015 22:25:28 GMT
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Cache-Control: no-cache
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Length: 157
+2015-05-14 01:25:28 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Type: application/json; charset=utf-8
+2015-05-14 01:25:28 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
+2015-05-14 01:25:28 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}-&gt;http://localhost:4444] can be kept alive indefinitely
+2015-05-14 01:25:28 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]</msg>
+<status status="PASS" endtime="20150514 01:25:28.528" starttime="20150514 01:25:24.073"></status>
 </kw>
 <test id="s1-s1-t1" name="Scenario: As an editor I can add new translation">
-<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Open Browser">
+<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.Given The user navigates to the page">
+<doc></doc>
+<arguments>
+<arg>${homePage}</arg>
+</arguments>
+<msg timestamp="20150514 01:25:37.506" level="INFO">log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [debug].
+log4j: root level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.DailyRollingFileAppender]
+log4j: Setting property [file] to [src/logs/app.log].
+log4j: Setting property [datePattern] to ['.'yyyy-MM-dd].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [[%p] %d %c %M - %m%n].
+log4j: setFile called: src/logs/app.log, true
+log4j: setFile ended
+log4j: Appender [RollingAppender] to be rolled at midnight.
+log4j: Adding appender named [RollingAppender] to category [root].</msg>
+<status status="PASS" endtime="20150514 01:25:37.506" starttime="20150514 01:25:28.575"></status>
+</kw>
+<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.When The page is loaded">
 <doc></doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20150512 23:54:58.162" starttime="20150512 23:54:58.146"></status>
+<status status="PASS" endtime="20150514 01:25:37.675" starttime="20150514 01:25:37.519"></status>
 </kw>
-<kw type="kw" name="BuiltIn.Given Log">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>@{msg}</arg>
-</arguments>
-<msg timestamp="20150512 23:54:58.162" level="INFO">Hello</msg>
-<msg timestamp="20150512 23:54:58.162" level="INFO">Darius - LOG Message</msg>
-<status status="PASS" endtime="20150512 23:54:58.162" starttime="20150512 23:54:58.162"></status>
-</kw>
-<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.When Custom key Test">
+<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.Then The menu bar is displayed">
 <doc></doc>
 <arguments>
 </arguments>
-<msg timestamp="20150512 23:54:58.178" level="INFO">Hello crappy</msg>
-<status status="PASS" endtime="20150512 23:54:58.178" starttime="20150512 23:54:58.178"></status>
+<status status="PASS" endtime="20150514 01:25:38.050" starttime="20150514 01:25:37.675"></status>
 </kw>
-<kw type="kw" name="BuiltIn.Then Log">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>@{msg}</arg>
-</arguments>
-<msg timestamp="20150512 23:54:58.193" level="INFO">Hello</msg>
-<msg timestamp="20150512 23:54:58.193" level="INFO">Darius - LOG Message</msg>
-<status status="PASS" endtime="20150512 23:54:58.209" starttime="20150512 23:54:58.193"></status>
-</kw>
-<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Setup Test">
+<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Test Status">
 <doc></doc>
 <arguments>
+<arg>${TEST STATUS}</arg>
+<arg>${TEST NAME}</arg>
 </arguments>
-<status status="PASS" endtime="20150512 23:54:58.209" starttime="20150512 23:54:58.209"></status>
+<msg timestamp="20150514 01:26:07.420" level="INFO">log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [debug].
+log4j: root level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.DailyRollingFileAppender]
+log4j: Setting property [file] to [src/logs/app.log].
+log4j: Setting property [datePattern] to ['.'yyyy-MM-dd].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [[%p] %d %c %M - %m%n].
+log4j: setFile called: src/logs/app.log, true
+log4j: setFile ended
+log4j: Appender [RollingAppender] to be rolled at midnight.
+log4j: Adding appender named [RollingAppender] to category [root].
+2015-05-14 01:25:45 INFO  RallyUtil:16 - Thread 1 - Opening connection to Rally...
+2015-05-14 01:25:45 INFO  RallyUtil:16 - Thread 1 - restApi se application name
+2015-05-14 01:25:50 INFO  RallyUtil:16 - Thread 1 - Opening connection to Rally...
+2015-05-14 01:25:50 INFO  RallyUtil:16 - Thread 1 - restApi se application name
+2015-05-14 01:25:50 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
+2015-05-14 01:25:51 DEBUG DefaultClientConnectionOperator:174 - Connecting to rally1.rallydev.com:443
+2015-05-14 01:25:51 DEBUG RequestAddCookies:122 - CookieSpec selected: default
+2015-05-14 01:25:51 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2015-05-14 01:25:51 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
+2015-05-14 01:25:51 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
+2015-05-14 01:25:51 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
+2015-05-14 01:25:51 DEBUG DefaultClientConnection:268 - Sending request: GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
+2015-05-14 01:25:51 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
+2015-05-14 01:25:51 DEBUG headers:272 - &gt;&gt; GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
+2015-05-14 01:25:51 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-1017kpfwyn9a3z61v0q18cjfacsf.qd-app-1013074798[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "ETag: "04d3f3586579e4204c6c911688bd65270"[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Content-Length: 448[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Date: Wed, 13 May 2015 22:25:52 GMT[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: JSESSIONID=qd-app-1017kpfwyn9a3z61v0q18cjfacsf.qd-app-10;Path=/;Secure;HttpOnly[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3445525d5f4f58455e445a4a42378b;path=/;secure;httponly[\r][\n]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
+2015-05-14 01:25:52 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
+2015-05-14 01:25:52 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-1017kpfwyn9a3z61v0q18cjfacsf.qd-app-1013074798
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; ETag: "04d3f3586579e4204c6c911688bd65270"
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Content-Length: 448
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Date: Wed, 13 May 2015 22:25:52 GMT
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Set-Cookie: JSESSIONID=qd-app-1017kpfwyn9a3z61v0q18cjfacsf.qd-app-10;Path=/;Secure;HttpOnly
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
+2015-05-14 01:25:52 DEBUG headers:259 - &lt;&lt; Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3445525d5f4f58455e445a4a42378b;path=/;secure;httponly
+2015-05-14 01:25:52 DEBUG ResponseProcessCookies:118 - Cookie accepted [JSESSIONID="qd-app-1017kpfwyn9a3z61v0q18cjfacsf.qd-app-10", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
+2015-05-14 01:25:52 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
+2015-05-14 01:25:52 DEBUG ResponseProcessCookies:118 - Cookie accepted [NSC_vt1.sbmmzefw.dpn!-!IUUQT="ffffffff09091c3445525d5f4f58455e445a4a42378b", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
+2015-05-14 01:25:52 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
+2015-05-14 01:25:52 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
+2015-05-14 01:25:52 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
+2015-05-14 01:25:52 DEBUG wire:86 -  &lt;&lt; "[0x8]"
+2015-05-14 01:25:52 DEBUG wire:86 -  &lt;&lt; "[0x0]"
+2015-05-14 01:25:52 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2015-05-14 01:25:52 DEBUG wire:72 -  &lt;&lt; "[0xa5]Q]o[0xda]@[0x10][0xfc]+[0xab]{[0xe8]S[0xb1][0xc1]6[0xa8][0x90][0xa8]RD[0xfa][0xc1]C[0xdb][0xb4][0x90][0xf2][0xd0]Dh[0xed][[0xe0][0x90]}g[0xed][0x9d][0x9d][0xba][0x11][0xff]=w[0x6][0xa4][0xa8]oU[0x9f]N373[0xda][0xdd]y[0x16][0xdf][0x1b][0xe2][0xee][0x7][0xd9][0xa6]tb[0x6][0xcf]b[0xc3]X[0x96][0xdd][0xcd][0xdd][0xe2][0xb][0x1e][0xc]{J$[0xe2]-[0xbc][0xa2][0x95]&gt;[0xd1][0xc3]@`6l=[0xfc][0xf5][0xe8][0xd1][0x1a]Y+[0xbd][0xeb][0xb1]X8P[0x16][0xb4][0x81][0xd2][0xe8][0x1d]1h*[0xc8]Z[0xe4][0xe][0x9c][0x1][0xac]k[0xd2][0x12][0x1e]Dt[0xb0][0xf]"0[0xeb][0xa5][0xf][0x7]&amp;k[0x1a][0xf6][0xc2]H[0x84][0xc0][0x95]qX[0x9e][0x86][0x9b][0x9b]F[0x87][0x9]G[0x9e]^:d[0xb7][0xd0][0x92]~[0x9f][0x89];[0xdc][0xd1]R[0xfd]![0xf][0x93][0xb1][0xc7]'K?[0xc7][0xbf]n[0xb4]a[0xda][0x6][0xb0]w[0xae][0xb6][0xb3]8[0xee]U[0xa3][0xa8]$[0xb5]Qa[0xaa][0xd8][0x96]U[0xfc]D[0xb9]%nUAq[0x9b]D[0xc3][0xd8][0x91]u[0x5]Z[0x8a][0xd3]q[0x96]M[0xb2][0xd1]4[0x9d][0xa6][0x97][0xbc]o[0xf9][0x81][\n]"
+2015-05-14 01:25:52 DEBUG wire:86 -  &lt;&lt; "w[0xbf][0xb8][\r][0xc9]2[0xdd][0xe2]([0x19][0xe5][0x83][0x4])[0x1b]d[0x93]&lt;[0x1b]L[0xd3]![\r][0x92]DN[0xb2]q1L[0xdf][0xe1][0xb6]w[0x9a][0xde][0xf6][0x93][0xd8]*[0xa3][0x83][0xf3][0xaf][0xc0][0xaf]X[0x85][0x8d][0xc5][0xb2] [0x8d][0xac][0xcc][0xc]n,[0xa0][0x6][0x92][0xca][0x19][0x86][0x5][0x14][0x1e][0xa0][0x94][0xfe][0xf4]O[0xe0][0x18][0xb5]-[0xd1][0x85]([0x9f]rK[0xb6]`U[0xbb]s[0xf2][0xb5]T[0xed][0xfb]O[0xaa]%[\r][0xab]=AcCa[0xd8][0xaa][0x1d][0xfa][0xbd]B=[0xce][0xb3][0x9f]MEP[0xfb]S[0xbf][0xd1][0xb9][0xad][0xaf][0xae][0xe3]`[0xea][0x9d][0xb0][0xde][0x9f][0x9d][0xe1];[0xf4]^[0x1a][0x94]$_KV[0x17]IE[0xba][0x81][0x1c]9[0xc8][0xa4][0xb2]u[0x89][0xdd]E[0x19]&amp;[0xfb]h[0xb8]B[0xe7]H[0x9e][0xae][0xb5][0x9a][0xf7]m[0xfd][0xcf][0xae][0x1b][0xd7][0xd5][0xbd]y[0xe5];[0x9a][0xfb][0x8e][0xc4][0xf1][0xf1]x|[0x1][0xca][0x10][0x97]c[0xfb][0x2][0x0][0x0]"
+2015-05-14 01:25:52 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@506f2494
+2015-05-14 01:25:52 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
+2015-05-14 01:25:52 INFO  RallyUtil:16 - Thread 1 - Closing connection to Rally...
+2015-05-14 01:25:52 DEBUG DefaultClientConnection:176 - Connection 0.0.0.0:63713&lt;-&gt;95.101.178.200:443 closed
+2015-05-14 01:25:52 INFO  RallyUtil:16 - Thread 1 - Connection to Rally Closed</msg>
+<msg timestamp="20150514 01:26:07.461" level="FAIL">IllegalStateException: Connection manager has been shut down</msg>
+<status status="FAIL" endtime="20150514 01:26:07.477" starttime="20150514 01:25:38.066">IllegalStateException: Connection manager has been shut down</status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" critical="yes" endtime="20150512 23:54:58.225" starttime="20150512 23:54:58.146"></status>
-</test>
-<test id="s1-s1-t2" name="Scenario: As an editor I can add the newsest translation test">
-<kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Open Browser">
-<doc></doc>
-<arguments>
-</arguments>
-<status status="PASS" endtime="20150512 23:54:58.240" starttime="20150512 23:54:58.225"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Given Log">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>@{msg}</arg>
-</arguments>
-<msg timestamp="20150512 23:54:58.240" level="INFO">Hello</msg>
-<msg timestamp="20150512 23:54:58.256" level="INFO">Darius - LOG Message</msg>
-<status status="PASS" endtime="20150512 23:54:58.256" starttime="20150512 23:54:58.240"></status>
-</kw>
-<kw type="kw" name="com.insertNameHere.keyWords.CustomKey.When Custom key Test">
-<doc></doc>
-<arguments>
-</arguments>
-<msg timestamp="20150512 23:54:58.256" level="INFO">Hello crappy</msg>
-<status status="PASS" endtime="20150512 23:54:58.271" starttime="20150512 23:54:58.256"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Then Log">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>@{msg}</arg>
-</arguments>
-<msg timestamp="20150512 23:54:58.271" level="INFO">Hello</msg>
-<msg timestamp="20150512 23:54:58.271" level="INFO">Darius - LOG Message</msg>
-<status status="PASS" endtime="20150512 23:54:58.271" starttime="20150512 23:54:58.271"></status>
-</kw>
-<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Setup Test">
-<doc></doc>
-<arguments>
-</arguments>
-<status status="PASS" endtime="20150512 23:54:58.287" starttime="20150512 23:54:58.271"></status>
-</kw>
-<doc></doc>
-<tags>
-</tags>
-<status status="PASS" critical="yes" endtime="20150512 23:54:58.287" starttime="20150512 23:54:58.225"></status>
+<status status="FAIL" critical="yes" endtime="20150514 01:26:07.477" starttime="20150514 01:25:28.544">Teardown failed:
+IllegalStateException: Connection manager has been shut down</status>
 </test>
 <kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Close Driver">
 <doc></doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20150512 23:54:58.287" starttime="20150512 23:54:58.287"></status>
+<status status="PASS" endtime="20150514 01:26:07.618" starttime="20150514 01:26:07.508"></status>
 </kw>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20150512 23:54:58.303" starttime="20150512 23:54:57.787"></status>
+<status status="FAIL" endtime="20150514 01:26:07.633" starttime="20150514 01:25:23.587"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20150512 23:54:58.303" starttime="20150512 23:54:57.218"></status>
+<status status="FAIL" endtime="20150514 01:26:07.665" starttime="20150514 01:25:23.079"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0">Critical Tests</stat>
-<stat pass="2" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" id="s1" fail="0" name="SeleniumTestCases">SeleniumTestCases</stat>
-<stat pass="2" id="s1-s1" fail="0" name="SeleniumCaseOne">SeleniumTestCases.SeleniumCaseOne</stat>
+<stat pass="0" id="s1" fail="1" name="SeleniumTestCases">SeleniumTestCases</stat>
+<stat pass="0" id="s1-s1" fail="1" name="SeleniumCaseTwo">SeleniumTestCases.SeleniumCaseTwo</stat>
 </suite>
 </statistics>
 <errors>

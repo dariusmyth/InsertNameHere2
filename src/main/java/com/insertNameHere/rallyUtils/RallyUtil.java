@@ -6,6 +6,7 @@ import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.python.modules.synchronize;
 import org.testng.Assert;
 
 import com.google.gson.Gson;
@@ -91,14 +92,15 @@ public class RallyUtil {
 	}
 
 	private synchronized static UpdateResponse updateObjectWithDataInRally(String objectType, String id, JsonObject updateObject) {
-		UpdateResponse updateResponse = null;
+		UpdateResponse updateResponse=null;
 		setupRallyConnection();
 		try {
 			String objectRefID = String.format("/%s/%s", objectType, parseRefNumber(getDefectReferenceNumber(id), objectType));
-			UpdateRequest updateRequest = new UpdateRequest(objectRefID, updateObject);
-			updateResponse = restApi.update(updateRequest);
+			UpdateRequest updateRequestx = new UpdateRequest(objectRefID, updateObject);
+			updateResponse = restApi.update(updateRequestx);
+			
 			Assert.assertTrue(updateResponse.wasSuccessful());
-			appLogger.logInfo("Rally Update possibly successfull.");
+			appLogger.logInfo("Rally Update possibly successfull: "+id);
 
 		} catch (IOException e) {
 			appLogger.logError("Cannot create defect for test " + id);
@@ -177,53 +179,79 @@ public class RallyUtil {
 		return queryResponse;
 	}
 
+	public synchronized static String getTestCaseIDForTestCaseWithName(String title) {
+		JsonArray reponseArray = new JsonArray();
+		JsonObject responseObject= new JsonObject();
+		reponseArray = queryRallyForTestCaseInformation(title).getResults();
+		responseObject=reponseArray.get(0).getAsJsonObject();
+		return responseObject.get("FormattedID").toString().replace("\"", "").trim();
+		
+	}
+
 	public synchronized static String createOrOpenDefectInRally(String title, String description) {
 
 		QueryResponse getInfoForDefect = queryRallyForDefectInformation(title);
-		CreateResponse createDefectResponse=null;
+		JsonArray jsonArr=new JsonArray();
+		jsonArr=getInfoForDefect.getResults().getAsJsonArray();
+		int i=jsonArr.size();
+		CreateResponse createDefectResponse = null;
 		String state = null;
 		String id = null;
-		if (getInfoForDefect.wasSuccessful()) {
+		if (getInfoForDefect.wasSuccessful()&&(i>0)) {
+			
+			JsonObject jsonObj=jsonArr.get(0).getAsJsonObject();
+		
+			
+			
 			JsonArray infoForDefectArray = getInfoForDefect.getResults();
-			state = infoForDefectArray.get(0).getAsJsonObject().get("State").toString();
+			state = infoForDefectArray.get(0).getAsJsonObject().get("State").toString().replace("\"", "").trim();
 			if (state.equals("Fixed") || state.equals("Closed")) {
 
-				id = parseRefNumber(infoForDefectArray.get(0).getAsJsonObject().get("_ref").toString(), "defect");
+				id = infoForDefectArray.get(0).getAsJsonObject().get("FormattedID").toString().replace("\"", "").toString();
 				JsonObject updateObject = new JsonObject();
-				updateObject.addProperty("State", "Opened");
+				updateObject.addProperty("State", "Open");
+				updateObject.addProperty("Notes", "Re-opened by automated test");
 				updateObjectWithDataInRally("defect", id, updateObject);
+				
 			}
 		} else {
 			JsonObject createDefectObject = new JsonObject();
 			createDefectObject.addProperty("Description", description);
 			createDefectObject.addProperty("Name", title);
-			createDefectObject.addProperty("State", "Opened");
-			createDefectResponse=createObjectInRally("defect", createDefectObject);
-			JsonObject createResponseArray= createDefectResponse.getObject();
-			id=createResponseArray.get("FormattedID").toString();
+			createDefectObject.addProperty("State", "Submitted");
+			createDefectResponse = createObjectInRally("defect", createDefectObject);
+			JsonObject createResponseArray = createDefectResponse.getObject();
+			id = createResponseArray.get("FormattedID").toString();
 		}
 		return id;
 	}
 
-	public synchronized static String createTestCaseInRally(String title, String description, String preConditions, String postConditions){
-		
-		QueryResponse getInfoForDefect=queryRallyForTestCaseInformation(title);
-		JsonObject responseObject=new JsonObject();
-		if(!getInfoForDefect.wasSuccessful()){
-			JsonObject createDefectObject= new JsonObject();
+	public synchronized static String createTestCaseInRally(String title, String description, String preConditions, String postConditions) {
+
+		QueryResponse getInfoForDefect = queryRallyForTestCaseInformation(title);
+		JsonObject responseObject = new JsonObject();
+		if (!getInfoForDefect.wasSuccessful()) {
+			JsonObject createDefectObject = new JsonObject();
 			createDefectObject.addProperty("Description", description);
 			createDefectObject.addProperty("Name", title);
 			createDefectObject.addProperty("Method", "Automated");
 			createDefectObject.addProperty("Type", "Acceptance");
 			createDefectObject.addProperty("Pre-Conditions", preConditions);
 			createDefectObject.addProperty("Post-Conditions", postConditions);
-			responseObject=createObjectInRally("defect", createDefectObject).getObject();
-			
-			
-		} else{
-			responseObject=getInfoForDefect.getResults().getAsJsonArray().get(0).getAsJsonObject();
+			responseObject = createObjectInRally("defect", createDefectObject).getObject();
+
+		} else {
+			responseObject = getInfoForDefect.getResults().getAsJsonArray().get(0).getAsJsonObject();
 		}
 		return responseObject.get("FormatedID").toString();
+	}
+
+	public synchronized static String getTestCaseDescription(String title){
+		JsonArray reponseArray = new JsonArray();
+		JsonObject responseObject= new JsonObject();
+		reponseArray = queryRallyForTestCaseInformation(title).getResults();
+		responseObject=reponseArray.get(0).getAsJsonObject();
+		return responseObject.get("Description").toString().replace("\"", "").trim();
 	}
 
 	/**
@@ -235,24 +263,22 @@ public class RallyUtil {
 	public synchronized static void createTestResult(String testSetID, String testID, String verdict, String notes) {
 		try {
 			setupRallyConnection();
-			String testCaseRef = getTestCaseReferenceNumber(testID);
-			String testSetRef = getTestSetReferenceNumber(testSetID);
+
+			String testCaseRef = parseRefNumber(getTestCaseReferenceNumber(testID), "testcase");
+			String testSetRef = parseRefNumber(getTestSetReferenceNumber(testSetID), "testset");
 
 			// Assert.assertTrue(userRef.length() > 0,
 			// "Could not obtain a reference from Rally for user " + user);
 			// testSetRef - this is obtained at the start of the test runs in
 			// the @BeforeClass
-			RallyTestResult rtr = new RallyTestResult(parseRefNumber(testCaseRef, "testcase"), parseRefNumber(testSetRef, "testset"), dfRally.format(new Date()), verdict, userRef, testBuild, notes);
+
+			RallyTestResult rtr = new RallyTestResult(testSetRef, testCaseRef, dfRally.format(new Date()), verdict, userRef, testBuild, notes);
 
 			CreateRequest req = new CreateRequest("testcaseresult", (JsonObject) new Gson().toJsonTree(rtr));
 
 			// System.out.println(req.getBody());
 
-			if (!testCaseRef.isEmpty() && testCaseRef != null) // include here
-																// the condition
-																// for rally
-																// update or not
-			{
+			if (!testCaseRef.isEmpty() && testCaseRef != null && CommonFileUtils.getValueFromConfigFile("updateRally").toLowerCase().equals("true")) {
 
 				CreateResponse res = restApi.create(req);
 				Assert.assertTrue(res.wasSuccessful());

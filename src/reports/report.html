@@ -1523,25 +1523,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,1085],[[4,5,6,0,[],[1,569,516],[],[[7,0,1,0,[],[1,928,79],[]],[8,0,1,0,[],[1,1007,62],[]]],[],[2,2,2,2]]],[],[],[2,2,2,2]];
+window.output["suite"] = [1,2,3,0,[],[0,0,44586],[[4,5,6,0,[],[0,508,44046],[],[[7,0,1,0,[],[0,5465,38933,8],[]]],[],[1,0,1,0]]],[],[],[1,0,1,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*SeleniumTestCases","*D:\\darius\\BitBucketRepo\\InsertNameHereProject\\src\\test\\robotframework\\acceptance\\SeleniumTestCases","*../test/robotframework/acceptance/SeleniumTestCases","*SeleniumCaseOne","*D:\\darius\\BitBucketRepo\\InsertNameHereProject\\src\\test\\robotframework\\acceptance\\SeleniumTestCases\\SeleniumCaseOne.txt","*../test/robotframework/acceptance/SeleniumTestCases/SeleniumCaseOne.txt","*Scenario: As an editor I can add new translation","*Scenario: As an editor I can add the newsest translation test"]);
+window.output["strings"] = window.output["strings"].concat(["*","*SeleniumTestCases","*D:\\darius\\BitBucketRepo\\InsertNameHereProject\\src\\test\\robotframework\\acceptance\\SeleniumTestCases","*../test/robotframework/acceptance/SeleniumTestCases","*SeleniumCaseTwo","*D:\\darius\\BitBucketRepo\\InsertNameHereProject\\src\\test\\robotframework\\acceptance\\SeleniumTestCases\\SeleniumCaseTwo.txt","*../test/robotframework/acceptance/SeleniumTestCases/SeleniumCaseTwo.txt","*Scenario: As an editor I can add new translation","*Teardown failed:\nIllegalStateException: Connection manager has been shut down"]);
 </script>
 <script type="text/javascript">
-window.output["generatedMillis"] = 782;
+window.output["generatedMillis"] = 45921;
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1431464097218;
+window.output["baseMillis"] = 1431555923079;
 </script>
 <script type="text/javascript">
-window.output["generatedTimestamp"] = "20150512 23:54:58 GMT +03:00";
+window.output["generatedTimestamp"] = "20150514 01:26:09 GMT +03:00";
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"Critical Tests","pass":2},{"elapsed":"00:00:00","fail":0,"label":"All Tests","pass":2}],[],[{"elapsed":"00:00:01","fail":0,"id":"s1","label":"SeleniumTestCases","name":"SeleniumTestCases","pass":2},{"elapsed":"00:00:01","fail":0,"id":"s1-s1","label":"SeleniumTestCases.SeleniumCaseOne","name":"SeleniumCaseOne","pass":2}]];
+window.output["stats"] = [[{"elapsed":"00:00:39","fail":1,"label":"Critical Tests","pass":0},{"elapsed":"00:00:39","fail":1,"label":"All Tests","pass":0}],[],[{"elapsed":"00:00:45","fail":1,"id":"s1","label":"SeleniumTestCases","name":"SeleniumTestCases","pass":0},{"elapsed":"00:00:44","fail":1,"id":"s1-s1","label":"SeleniumTestCases.SeleniumCaseTwo","name":"SeleniumCaseTwo","pass":0}]];
 </script>
 <script type="text/javascript">
 window.settings = {"background":{"fail":"#FF3333","nonCriticalFail":"#99FF66","pass":"#99FF66"},"logURL":"log.html","title":""};
@@ -1755,6 +1755,38 @@ function searchExecuted(suite, test, include, exclude) {
     }
 }
 
+// Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
 function renderSearchSelector(suite, test, include, exclude) {
     var args = {linkTarget: (suite || test || include || exclude) ?
                             ('search?suite=' + suite + '&test=' + test + '&include=' + include + '&exclude=' + exclude) :
@@ -2017,6 +2049,9 @@ function hideHiddenDetailsColumns(elem) {
     <li class="${searchTabStatus} detail-tab">
       <a href="#search" onclick="renderSearchSelector()">Search</a>
     </li>
+	<li class="${pieChart} detail-tab">
+		<a href="file:///C:/Users/dbozga/Desktop/pie.html">PieChart</a>
+	</li>
   </ul>
 </script>
 

@@ -1,0 +1,24 @@
+[INFO] 2015-05-13 23:05:46,793 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser: firefox and URL: http://localhost:4444/wd/hub
+[INFO] 2015-05-13 23:05:46,824 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver setup initiated...
+[INFO] 2015-05-13 23:05:50,907 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver initiated successfully....
+[ERROR] 2015-05-13 23:05:58,086 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: FAIL
+[ERROR] 2015-05-13 23:05:58,086 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation
+[INFO] 2015-05-13 23:07:16,055 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser: firefox and URL: http://localhost:4444/wd/hub
+[INFO] 2015-05-13 23:07:16,086 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver setup initiated...
+[INFO] 2015-05-13 23:07:19,787 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver initiated successfully....
+[ERROR] 2015-05-13 23:07:29,410 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: FAIL
+[ERROR] 2015-05-13 23:07:29,410 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation
+[INFO] 2015-05-13 23:07:29,457 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Close Browser
+[INFO] 2015-05-13 23:08:20,569 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser: firefox and URL: http://localhost:4444/wd/hub
+[INFO] 2015-05-13 23:08:20,600 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver setup initiated...
+[INFO] 2015-05-13 23:08:24,229 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver initiated successfully....
+[ERROR] 2015-05-13 23:08:34,884 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: PASS
+[ERROR] 2015-05-13 23:08:34,884 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation
+[INFO] 2015-05-13 23:08:34,963 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Close Browser
+[INFO] 2015-05-13 23:53:01,118 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser:  and URL: http://localhost:4444/wd/hub
+[INFO] 2015-05-13 23:53:01,149 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver setup initiated...
+[ERROR] 2015-05-13 23:53:01,880 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: FAIL
+[ERROR] 2015-05-13 23:53:01,880 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation
+[INFO] 2015-05-13 23:54:50,510 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser: firefox and URL: http://localhost:4444/wd/hub
+[ERROR] 2015-05-13 23:54:50,557 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: FAIL
+[ERROR] 2015-05-13 23:54:50,557 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation

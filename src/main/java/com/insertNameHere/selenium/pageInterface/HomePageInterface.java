@@ -7,4 +7,8 @@ public interface HomePageInterface {
 	
 	boolean isPageLoaded();
 	
+	boolean isItemsMenuDisplayed();
+	
+	boolean areAllTheItemsDisplayedInTheItemsMenu();
+	
 }

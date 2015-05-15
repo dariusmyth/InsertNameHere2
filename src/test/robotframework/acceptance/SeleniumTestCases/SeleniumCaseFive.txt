@@ -11,15 +11,5 @@ ${REMOTE_URL}  www.emag.ro
 @{msg}  Hello
 
 
-*** Test Cases ***
-Scenario: As an editor I can add new translation
-	Given Log      @{msg}
-	When Custom key Test
-	Then Log	   @{msg}
-	
-Scenario: As an editor I can add new translation
-	Given Log      @{msg}
-	When Custom key Test
-	Then Log	   @{msg}
-	
-	
+*** Test Cases ***	
+Invalid Password [Template]  Login
