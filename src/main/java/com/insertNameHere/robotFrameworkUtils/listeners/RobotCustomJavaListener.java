@@ -4,17 +4,20 @@ import java.io.*;
 import java.util.Map;
 import java.util.List;
 
-public class JavaListener {
+import com.insertNameHere.utils.ApplicationLogger;
+
+public class RobotCustomJavaListener {
 
 	public static final int ROBOT_LISTENER_API_VERSION = 2;
 	public static final String DEFAULT_FILENAME = "listen_java.txt";
 	private BufferedWriter outfile = null;
+	private ApplicationLogger LOG = new ApplicationLogger(RobotCustomJavaListener.class);
 
-	public JavaListener() {
+	public RobotCustomJavaListener(){
 		this(DEFAULT_FILENAME);
 	}
 
-	public JavaListener(String filename) {
+	public RobotCustomJavaListener(String filename) {
 		String tmpdir = System.getProperty("java.io.tmpdir");
 		String sep = System.getProperty("file.separator");
 		String outpath = "d:/darius" + sep + filename;
@@ -26,30 +29,35 @@ public class JavaListener {
 	}
 
 	public void startSuite(String name, @SuppressWarnings("rawtypes") Map attrs) throws IOException {
-		outfile.write(name + " '" + attrs.get("doc") + "'\n");
+		LOG.logWarning("Start suite values : ");
+		LOG.logWarning(name + " '" + attrs.get("doc") + "'\n");
 	}
 
 	@SuppressWarnings("rawtypes")
 	public void startTest(String name, Map attrs) throws IOException {
-		outfile.write("- " + name + " '" + attrs.get("doc") + "' [ ");
+		LOG.logWarning("Start test values : ");
+		LOG.logWarning("- " + name + " '" + attrs.get("doc") + "' [ ");
 		List tags = (List) attrs.get("tags");
 		for (int i = 0; i < tags.size(); i++) {
-			outfile.write(tags.get(i) + " ");
+			LOG.logWarning(tags.get(i) + " ");
 		}
-		outfile.write(" ] :: ");
+		LOG.logWarning(" ] :: ");
 	}
 
 	public void endTest(String name, @SuppressWarnings("rawtypes") Map attrs) throws IOException {
+		LOG.logWarning("End test values : ");
+
 		String status = attrs.get("status").toString();
 		if (status.equals("PASS")) {
-			outfile.write("PASS\n");
+			LOG.logWarning("PASS\n");
 		} else {
-			outfile.write("FAIL: " + attrs.get("message") + "\n");
+			LOG.logWarning("FAIL: " + attrs.get("message") + "\n");
 		}
 	}
 
 	public void endSuite(String name, @SuppressWarnings("rawtypes") Map attrs) throws IOException {
-		outfile.write(attrs.get("status") + "\n" + attrs.get("message") + "\n");
+		LOG.logWarning("End suite values : ");
+		LOG.logWarning(attrs.get("status") + "\n" + attrs.get("message") + "\n");
 	}
 
 	public void close() throws IOException {

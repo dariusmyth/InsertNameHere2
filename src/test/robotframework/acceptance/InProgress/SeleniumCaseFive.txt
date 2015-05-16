@@ -1,0 +1,25 @@
+*** Settings ***
+Library    com.insertNameHere.keyWords.CustomKey   ${BROWSER}   ${HUB_ADDRESS}
+Test Postcondition  	initializeDriver
+Test Precondition		Open browser
+Suite Postcondition		Close driver
+*** Variables ***
+
+${BROWSER}  firefox
+${HUB_ADDRESS}  http://localhost:4444/wd/hub
+${homePage}  emag
+@{msg}  Hello
+${HOME_PAGE_TITLE}   eMAG.ro - cea mai variata gama de produse
+
+
+*** Test Cases ***
+
+Scenario: As an editor I can add new translation
+	Given The ${homePage} is accessed by the user
+	When The page is loaded   ${HOME_PAGE_TITLE}
+	Then The menu bar is displayed
+	
+*** Keywords ***
+
+The ${PAGE} is accessed by the user
+   The user navigates to the page  ${PAGE}

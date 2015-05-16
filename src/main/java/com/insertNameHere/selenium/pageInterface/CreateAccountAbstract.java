@@ -3,12 +3,10 @@ package com.insertNameHere.selenium.pageInterface;
 import com.insertNameHere.selenium.utils.InsertNameHereRemoteDriver;
 import com.insertNameHere.selenium.utils.SeleniumCommonMethods;
 
-public abstract class HomePageAbstract extends SeleniumCommonMethods implements HomePageInterface {
+public class CreateAccountAbstract extends SeleniumCommonMethods implements CreateAccountInterface{
 
-	public HomePageAbstract(InsertNameHereRemoteDriver driver) {
+	public CreateAccountAbstract(InsertNameHereRemoteDriver driver) {
 		super(driver);
 	}
 
-	
-	
 }

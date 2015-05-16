@@ -1,0 +1,9 @@
+*** Settings ***
+Library    com.insertNameHere.keyWords.CustomKey   ${BROWSER}   ${HUB_ADDRESS}
+
+*** Variables ***
+${BROWSER}  firefox
+${HUB_ADDRESS}  http://localhost:4444/wd/hub
+${homePage}  emag
+@{msg}  Hello
+${HOME_PAGE_TITLE}   eMAG.ro - cea mai variata gama de produse

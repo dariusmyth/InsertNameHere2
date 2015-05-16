@@ -1,5 +1,47 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+<style>
+table.lamp {
+    width:100%;
+    border:1px solid #d4d4d4;
+}
+table.lamp th, td { 
+    padding:10px;
+}
+table.lamp th {
+    height:50px;
+    width:40px;
+}
+header {
+    background-color:#880000;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#FFFFFF;
+    height:100px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:450px;
+    float:left;
+    padding:10px;
+	 	 
+}
+footer {
+    background-color:#880000;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -26,22 +68,51 @@
         ]);
 
         // Set chart options
-        var options = {'title':'How Much Pizza I Ate Last Night',
-                       'width':800,
-                       'height':600};
+        var options = {'title':'',
+                       'width':600,
+                       'height':400};
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
     </script>
-  </head>
+</head>
+<body>
 
-  <body>
-    <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
-	<div> id="linkToReport"
-	<a href=file:///D:\darius\BitBucketRepo\InsertNameHereProject\src\reports\report.html>Robotium Report</a>
+<header>
+<table class="lamp">
+<tr>
+  <th>
+   <img src="w3schools.jpg" alt="W3Schools.com" width="54" height="50">
+  </th>
+  <td>
+    <h1>Project Report</h1>
+  </td>
+</tr>
+</table>
+</header>
+
+<nav>
+<div id="linkToReport">
+	<a href=file:///D:\darius\BitBucketRepo\InsertNameHereProject\reports\report.html>Robot Report</a>
 	</div>
-  </body>
+<div id="linkToLog">
+	<a href=file:///D:\darius\BitBucketRepo\InsertNameHereProject\reports\report.html>Log Report</a>
+	</div>
+</nav>
+
+<section>
+<h1>Test Results</h1>
+<p>
+<div id="chart_div"></div>
+</p>
+
+</section>
+
+<footer>
+Copyright @Darius
+</footer>
+
+</body>
 </html>

@@ -3,7 +3,7 @@ package testPack;
 import java.io.IOException;
 
 import com.insertNameHere.utils.ApplicationLogger;
-import com.insertNameHere.utils.GenerateChartFromGoogleAPI;
+import com.insertNameHere.utils.GenerateChartPage;
 
 
 public class TestngTestingStuff {
@@ -15,7 +15,7 @@ public class TestngTestingStuff {
 //		RallyUtil.createTestResult(RallyUtil.getTestCaseIDForTestCaseWithName(testName), TestResultVerdict.FAIL.getValue(), "Auto test");
 //		System.err.println("TEst case description: "+defectDescription);
 //		System.err.println("New Defect from Rally: "+RallyUtil.createOrOpenDefectInRally(testName, defectDescription));
-		GenerateChartFromGoogleAPI.generateChartFromTemplateFile(25, 70);
+		GenerateChartPage.generateChartFromTemplateFile(25, 70);
 	
 	}
 	

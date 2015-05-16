@@ -28,10 +28,9 @@ public class EmagHomePage extends HomePageAbstract {
 	}
 
 	@Override
-	public boolean isPageLoaded() {
+	public boolean isPageTitle(String title) {
 		appLog.logInfo("Is page loaded title " + driver.getTitle());
-
-		return driver.getTitle().equals("eMAG.ro - cea mai variata gama de produse");
+		return driver.getTitle().equals(title);
 	}
 
 	@Override

@@ -1,5 +1,7 @@
 package com.insertNameHere.robotFrameworkUtils.mainInterfaces;
 
+import java.util.Map;
+
 public interface RobotListenerGeneralInterface {
 	public static final int ROBOT_LISTENER_API_VERSION = 2;
 
@@ -9,7 +11,7 @@ public interface RobotListenerGeneralInterface {
 
 	void startTest(String name, java.util.Map attributes);
 
-	void endTest(String name, java.util.Map attributes);
+	void endTest(String name, Map attributes);
 
 	void startKeyword(String name, java.util.Map attributes);
 

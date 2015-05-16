@@ -5,7 +5,7 @@ public interface HomePageInterface {
 
 	void navigateToMainPage();
 	
-	boolean isPageLoaded();
+	boolean isPageTitle(String title);
 	
 	boolean isItemsMenuDisplayed();
 	
