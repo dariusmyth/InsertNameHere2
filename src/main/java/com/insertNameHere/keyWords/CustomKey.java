@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
 
 import com.insertNameHere.rallyUtils.RallyUtil;
-import com.insertNameHere.robotFrameworkUtils.listeners.RoboJavaListenerImplementation;
+import com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener;
 import com.insertNameHere.selenium.pageInterface.HomePageInterface;
 import com.insertNameHere.selenium.pageObjects.EmagHomePage;
 import com.insertNameHere.selenium.utils.InsertNameHereRemoteDriver;
@@ -16,7 +16,7 @@ public class CustomKey {
 
 	public static final String ROBOT_LIBRARY_SCOPE = "GLOBAL";
 	public static final String DEFAULT_FILENAME = "listen_java.txt";
-	public static final RoboJavaListenerImplementation ROBOT_LIBRARY_LISTENER = new RoboJavaListenerImplementation();
+	public static final RobotCustomJavaListener ROBOT_LIBRARY_LISTENER = new RobotCustomJavaListener();
 
 	private String browser;
 	private String URL;
@@ -68,7 +68,7 @@ public class CustomKey {
 	public void testStatus(String status, String testName) {
 		LOG.logError("The status of the test is: " + status);
 		LOG.logError("The test name is: " + testName);
-		RallyUtil.rallyUpdate(testName, status);
+//		RallyUtil.rallyUpdate(testName, status);
 
 	}
 

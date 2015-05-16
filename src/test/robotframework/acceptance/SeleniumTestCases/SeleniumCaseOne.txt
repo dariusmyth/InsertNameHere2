@@ -1,0 +1,20 @@
+*** Settings ***
+Resource   resource.txt
+Suite Precondition		Initialize driver
+Test Postcondition  	testStatus  ${TEST STATUS}  ${TEST NAME}
+Suite Postcondition		Close driver
+
+
+*** Test Cases ***
+
+Scenario: As an editor I can add new translation
+	Given The ${homePage} is accessed by the user
+	When The page is loaded  
+	Then The menu bar is displayed
+    
+ 	
+*** Keywords ***
+
+
+The ${PAGE} is accessed by the user
+   The user navigates to the page  ${PAGE}

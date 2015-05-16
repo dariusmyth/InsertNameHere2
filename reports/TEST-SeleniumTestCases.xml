@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="2" skip="0" tests="2" name="SeleniumTestCases">
-<testcase classname="SeleniumTestCases.SeleniumCaseTwo" time="13" name="Scenario: As an editor I can add new translation">
+<testsuite errors="0" failures="1" skip="0" tests="1" name="SeleniumTestCases">
+<testcase classname="SeleniumTestCases.SeleniumCaseOne" time="5" name="Scenario: As an editor I can add new translation">
 <failure message="Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0." type="AssertionError"></failure>
-</testcase>
-<testcase classname="SeleniumTestCases.SeleniumCaseTwo" time="1" name="Different argument names">
-<failure message="Teardown failed:&#10;IndexOutOfBoundsException: Index: 0, Size: 0" type="AssertionError"></failure>
 </testcase>
 </testsuite>

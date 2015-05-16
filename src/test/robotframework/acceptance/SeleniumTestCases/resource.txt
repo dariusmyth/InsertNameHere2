@@ -1,6 +1,6 @@
 *** Settings ***
 Library    com.insertNameHere.keyWords.CustomKey   ${BROWSER}   ${HUB_ADDRESS}
-
+Library    com.insertNameHere.keyWords.RallyLibraryCustomKey
 *** Variables ***
 ${BROWSER}  firefox
 ${HUB_ADDRESS}  http://localhost:4444/wd/hub
