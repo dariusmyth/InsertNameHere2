@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.7.0_80-ea)" generated="20150516 09:02:00.267">
-<suite source="d:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases" id="s1" name="SeleniumTestCases">
-<suite source="d:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases\SeleniumCaseTwo.txt" id="s1-s1" name="SeleniumCaseTwo">
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.7.0_80-ea)" generated="20150516 10:36:49.313">
+<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases" id="s1" name="SeleniumTestCases">
+<suite source="D:\darius\BitBucketRepo\InsertNameHereProject\src\test\robotframework\acceptance\SeleniumTestCases\SeleniumCaseOne.txt" id="s1-s1" name="SeleniumCaseOne">
 <kw type="setup" name="com.insertNameHere.keyWords.CustomKey.Initialize Driver">
 <doc></doc>
 <arguments>
 </arguments>
-<msg timestamp="20150516 09:02:07.243" level="INFO">log4j: System property is :null
+<msg timestamp="20150516 10:36:56.454" level="INFO">log4j: System property is :null
 log4j: Standard DocumentBuilderFactory search succeded.
 log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
 log4j: debug attribute= "true".
 log4j: reset attribute= "false".
 log4j: Threshold ="null".
-log4j: Level value for root is  [debug].
-log4j: root level set to DEBUG
+log4j: Level value for root is  [info].
+log4j: root level set to INFO
 log4j: Class name: [org.apache.log4j.ConsoleAppender]
 log4j: Setting property [target] to [System.out].
 log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
@@ -28,98 +28,9 @@ log4j: setFile called: src/logs/app.log, true
 log4j: setFile ended
 log4j: Appender [RollingAppender] to be rolled at midnight.
 log4j: Adding appender named [RollingAppender] to category [root].
-2015-05-16 09:02:01 INFO  InsertNameHereSeleniumDriver:16 - Thread 1 - Webdriver setup initiated...
-2015-05-16 09:02:01 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:01 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:01 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}-&gt;http://localhost:4444][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
-2015-05-16 09:02:01 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2015-05-16 09:02:01 DEBUG MainClientExec:234 - Opening connection {}-&gt;http://localhost:4444
-2015-05-16 09:02:01 DEBUG DefaultHttpClientConnectionOperator:131 - Connecting to localhost/127.0.0.1:4444
-2015-05-16 09:02:01 DEBUG DefaultHttpClientConnectionOperator:138 - Connection established 127.0.0.1:50791&lt;-&gt;127.0.0.1:4444
-2015-05-16 09:02:01 DEBUG MainClientExec:255 - Executing request POST /wd/hub/session HTTP/1.1
-2015-05-16 09:02:01 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:01 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:01 DEBUG headers:124 - http-outgoing-0 &gt;&gt; POST /wd/hub/session HTTP/1.1
-2015-05-16 09:02:01 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=utf-8
-2015-05-16 09:02:01 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Length: 1448
-2015-05-16 09:02:01 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Host: localhost:4444
-2015-05-16 09:02:01 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:01 DEBUG headers:127 - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:01 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "POST /wd/hub/session HTTP/1.1[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Type: application/json; charset=utf-8[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Length: 1448[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Host: localhost:4444[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:01 DEBUG wire:86 - http-outgoing-0 &gt;&gt; "{"desiredCapabilities":{"platform":"WINDOWS","firefox_profile":"UEsDBBQACAgIAEBIsEYAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WwY7bOAy99ysWOXWBjdBu0Ut7\nmu3MoUCBLjoo9ijIMh1rIkuCSMWTvy9lJ80kY8vG3mKHFMnH956cEKIMEZq3G3gmcGi8Q5FCrQiE\n82Sa408O2fz1R6Mswp+f36RLBoJO0dBR9Co6CY4gGreTw2sQ2PpeeqdhIVljEOBUZWcCaziQ9xYF\nxOij5v68hVNGzSkU001GFX3PT8JBT6oKavcyfKLC68mL4efja9+J3rja96JOXSi2xKeqCMFHYoRE\nC8pSOz4L63e7/PI02UOptG8aaxxsVQgolLWMcHWUNTQqWZouzE3WBvOZ0gdwsk7DkqxXy2hU1uu9\nNUjrAEGekVIQGXGOfHcdlZe4NyQILHRA8SgiPIGmOcS48U49S91G34FEHU0gGZOTZLp8/Ieb8wPH\nBULBK5edr5UtN80Qrtr2iziVyE8HnWdzQL2P+045hiCegS+S9Axay1OegNuoyif6VFnl9pvrrFMB\nMVbYnvnAh1DChe2Airo9zVIe47KiVXvnFvZiIBcrblQEJ/w9Hfzw89ud8AcWs6mnkXlBwIz4/Qji\no+YKecT37woHfxBKawhzpJpxrB7Ufi0iI82G82cmRNXA8DurughgwRU46GD0AjeLBrwmxYI6rLfs\nHqo6Gl6dHEGWyTHEyGBIDZGwyHMmhcumI87iyMX+a8E9ZgFwEzMQnWxgWf9P6qDGKOYiDfTJJb66\nL6OxTnZ31lNLFHKdLbuwY1PK6dsAcZv3MNx/t7S7ygytwfa4zX8Hhbi14HbUZop8/DhL7rPxl+6N\n0rrKojxZw1rl5r6iU/Y1rdHsnHds1h10FcTH4XHGa64JHbw1+ijyy8dUdQbz3P8OL+8uKi20N17g\nIkVbdsULMUcspVPEjxIOrIlpWv4GtjEW+Jfw0fA25NhzptdCPFI0muRtWmEaHgWHPX53X6zHZZEh\nJr75LiJjANPAxYlxbm4RtjSr8715wm4zY1UtWCt0C3p/P35E/DP+87/XW/x8mXTITlkGZcHpCk6Z\nQraVYt0VPtuYiPQjuTWuiXlaksaVdJiNa6wh+UNNPiFLLHPejOJZkvrBQJ+l3pnnRTRhQB7JM4oR\nBtI0fEtJHRW2qzn5nW1gzfRXna3+yn994U6m/gJQSwcIXmf/k08DAACQDAAAUEsBAhQAFAAICAgA\nQEiwRl5n/5NPAwAAkAwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA\nhAMAAAAA","browserName":"firefox","takesScreenshot":true}}"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Date: Sat, 16 May 2015 06:02:01 GMT[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Cache-Control: no-cache[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Length: 547[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Type: application/json; charset=utf-8[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:07 DEBUG headers:113 - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Date: Sat, 16 May 2015 06:02:01 GMT
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Cache-Control: no-cache
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Length: 547
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Type: application/json; charset=utf-8
-2015-05-16 09:02:07 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
-2015-05-16 09:02:07 DEBUG wire:86 - http-outgoing-0 &lt;&lt; "{"state":null,"sessionId":"71ea9320-97d6-473b-875f-e631feb17f5c","hCode":31961961,"value":{"applicationCacheEnabled":true,"rotatable":false,"handlesAlerts":true,"databaseEnabled":true,"version":"38.0.1","platform":"WINDOWS","nativeEvents":false,"acceptSslCerts":true,"webdriver.remote.sessionid":"71ea9320-97d6-473b-875f-e631feb17f5c","webStorageEnabled":true,"locationContextEnabled":true,"browserName":"firefox","takesScreenshot":true,"javascriptEnabled":true,"cssSelectorsEnabled":true},"class":"org.openqa.selenium.remote.Response","status":0}"
-2015-05-16 09:02:07 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}-&gt;http://localhost:4444] can be kept alive indefinitely
-2015-05-16 09:02:07 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2015-05-16 09:02:07 INFO  InsertNameHereSeleniumDriver:16 - Thread 1 - Webdriver initiated successfully....
-2015-05-16 09:02:07 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:07 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:07 DEBUG PoolingHttpClientConnectionManager:249 - Connection request: [route: {}-&gt;http://localhost:4444][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2015-05-16 09:02:07 DEBUG PoolingHttpClientConnectionManager:282 - Connection leased: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
-2015-05-16 09:02:07 DEBUG MainClientExec:207 - Stale connection check
-2015-05-16 09:02:07 DEBUG wire:86 - http-outgoing-0 &lt;&lt; "[read] I/O error: Read timed out"
-2015-05-16 09:02:07 DEBUG MainClientExec:255 - Executing request POST /wd/hub/session/71ea9320-97d6-473b-875f-e631feb17f5c/timeouts/implicit_wait HTTP/1.1
-2015-05-16 09:02:07 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:07 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:07 DEBUG headers:124 - http-outgoing-0 &gt;&gt; POST /wd/hub/session/71ea9320-97d6-473b-875f-e631feb17f5c/timeouts/implicit_wait HTTP/1.1
-2015-05-16 09:02:07 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=utf-8
-2015-05-16 09:02:07 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Content-Length: 12
-2015-05-16 09:02:07 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Host: localhost:4444
-2015-05-16 09:02:07 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:07 DEBUG headers:127 - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:07 DEBUG headers:127 - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "POST /wd/hub/session/71ea9320-97d6-473b-875f-e631feb17f5c/timeouts/implicit_wait HTTP/1.1[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Type: application/json; charset=utf-8[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Content-Length: 12[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Host: localhost:4444[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:86 - http-outgoing-0 &gt;&gt; "{"ms":10000}"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Date: Sat, 16 May 2015 06:02:07 GMT[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Cache-Control: no-cache[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Length: 157[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "Content-Type: application/json; charset=utf-8[\r][\n]"
-2015-05-16 09:02:07 DEBUG wire:72 - http-outgoing-0 &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:07 DEBUG headers:113 - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Date: Sat, 16 May 2015 06:02:07 GMT
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Server: Jetty/5.1.x (Windows 8.1/6.3 x86 java/1.8.0_31
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Cache-Control: no-cache
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Length: 157
-2015-05-16 09:02:07 DEBUG headers:116 - http-outgoing-0 &lt;&lt; Content-Type: application/json; charset=utf-8
-2015-05-16 09:02:07 DEBUG MainClientExec:284 - Connection can be kept alive indefinitely
-2015-05-16 09:02:07 DEBUG wire:86 - http-outgoing-0 &lt;&lt; "{"state":"success","sessionId":"71ea9320-97d6-473b-875f-e631feb17f5c","hCode":22859724,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}"
-2015-05-16 09:02:07 DEBUG PoolingHttpClientConnectionManager:314 - Connection [id: 0][route: {}-&gt;http://localhost:4444] can be kept alive indefinitely
-2015-05-16 09:02:07 DEBUG PoolingHttpClientConnectionManager:320 - Connection released: [id: 0][route: {}-&gt;http://localhost:4444][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]</msg>
-<status status="PASS" endtime="20150516 09:02:07.368" starttime="20150516 09:02:01.078"></status>
+2015-05-16 10:36:50 INFO  InsertNameHereSeleniumDriver:16 - Thread 1 - Webdriver setup initiated...
+2015-05-16 10:36:56 INFO  InsertNameHereSeleniumDriver:16 - Thread 1 - Webdriver initiated successfully....</msg>
+<status status="PASS" endtime="20150516 10:36:56.469" starttime="20150516 10:36:50.306"></status>
 </kw>
 <test id="s1-s1-t1" name="Scenario: As an editor I can add new translation">
 <kw type="kw" name="Given The ${homePage} is accessed by the user">
@@ -131,14 +42,14 @@ log4j: Adding appender named [RollingAppender] to category [root].
 <arguments>
 <arg>${PAGE}</arg>
 </arguments>
-<msg timestamp="20150516 09:02:12.154" level="INFO">log4j: System property is :null
+<msg timestamp="20150516 10:37:01.181" level="INFO">log4j: System property is :null
 log4j: Standard DocumentBuilderFactory search succeded.
 log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
 log4j: debug attribute= "true".
 log4j: reset attribute= "false".
 log4j: Threshold ="null".
-log4j: Level value for root is  [debug].
-log4j: root level set to DEBUG
+log4j: Level value for root is  [info].
+log4j: root level set to INFO
 log4j: Class name: [org.apache.log4j.ConsoleAppender]
 log4j: Setting property [target] to [System.out].
 log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
@@ -153,16 +64,16 @@ log4j: setFile called: src/logs/app.log, true
 log4j: setFile ended
 log4j: Appender [RollingAppender] to be rolled at midnight.
 log4j: Adding appender named [RollingAppender] to category [root].</msg>
-<status status="PASS" endtime="20150516 09:02:12.157" starttime="20150516 09:02:07.431"></status>
+<status status="PASS" endtime="20150516 10:37:01.186" starttime="20150516 10:36:56.535"></status>
 </kw>
-<status status="PASS" endtime="20150516 09:02:12.163" starttime="20150516 09:02:07.415"></status>
+<status status="PASS" endtime="20150516 10:37:01.192" starttime="20150516 10:36:56.503"></status>
 </kw>
 <kw type="kw" name="com.insertNameHere.keyWords.CustomKey.When The page is loaded">
 <doc></doc>
 <arguments>
 </arguments>
-<msg timestamp="20150516 09:02:12.176" level="FAIL">Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0.</msg>
-<status status="FAIL" endtime="20150516 09:02:12.179" starttime="20150516 09:02:12.173"></status>
+<msg timestamp="20150516 10:37:01.206" level="FAIL">Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0.</msg>
+<status status="FAIL" endtime="20150516 10:37:01.210" starttime="20150516 10:37:01.201"></status>
 </kw>
 <kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Test Status">
 <doc></doc>
@@ -170,585 +81,39 @@ log4j: Adding appender named [RollingAppender] to category [root].</msg>
 <arg>${TEST STATUS}</arg>
 <arg>${TEST NAME}</arg>
 </arguments>
-<msg timestamp="20150516 09:02:19.844" level="INFO">log4j: System property is :null
-log4j: Standard DocumentBuilderFactory search succeded.
-log4j: DocumentBuilderFactory is: org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
-log4j: debug attribute= "true".
-log4j: reset attribute= "false".
-log4j: Threshold ="null".
-log4j: Level value for root is  [debug].
-log4j: root level set to DEBUG
-log4j: Class name: [org.apache.log4j.ConsoleAppender]
-log4j: Setting property [target] to [System.out].
-log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
-log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
-log4j: Adding appender named [console] to category [root].
-log4j: Class name: [org.apache.log4j.DailyRollingFileAppender]
-log4j: Setting property [file] to [src/logs/app.log].
-log4j: Setting property [datePattern] to ['.'yyyy-MM-dd].
-log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
-log4j: Setting property [conversionPattern] to [[%p] %d %c %M - %m%n].
-log4j: setFile called: src/logs/app.log, true
-log4j: setFile ended
-log4j: Appender [RollingAppender] to be rolled at midnight.
-log4j: Adding appender named [RollingAppender] to category [root].
-2015-05-16 09:02:12 INFO  RallyUtil:16 - Thread 1 - Opening connection to Rally...
-2015-05-16 09:02:12 INFO  RallyUtil:16 - Thread 1 - restApi se application name
-2015-05-16 09:02:12 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
-2015-05-16 09:02:12 DEBUG DefaultClientConnectionOperator:174 - Connecting to rally1.rallydev.com:443
-2015-05-16 09:02:12 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:12 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:12 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:12 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:12 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
-2015-05-16 09:02:12 DEBUG DefaultClientConnection:268 - Sending request: GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:12 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:12 DEBUG headers:272 - &gt;&gt; GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:12 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-08sqylyanu1xt7b97d3rq2m5lq.qd-app-083677477[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "ETag: "0b12b5b8f128de8f052a0366eba481228"[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Content-Length: 449[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Date: Sat, 16 May 2015 06:02:13 GMT[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: JSESSIONID=qd-app-08sqylyanu1xt7b97d3rq2m5lq.qd-app-08;Path=/;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b;path=/;secure;httponly[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:13 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
-2015-05-16 09:02:13 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-08sqylyanu1xt7b97d3rq2m5lq.qd-app-083677477
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; ETag: "0b12b5b8f128de8f052a0366eba481228"
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Content-Length: 449
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Date: Sat, 16 May 2015 06:02:13 GMT
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Set-Cookie: JSESSIONID=qd-app-08sqylyanu1xt7b97d3rq2m5lq.qd-app-08;Path=/;Secure;HttpOnly
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
-2015-05-16 09:02:13 DEBUG headers:259 - &lt;&lt; Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b;path=/;secure;httponly
-2015-05-16 09:02:13 DEBUG ResponseProcessCookies:118 - Cookie accepted [JSESSIONID="qd-app-08sqylyanu1xt7b97d3rq2m5lq.qd-app-08", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:13 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:13 DEBUG ResponseProcessCookies:118 - Cookie accepted [NSC_vt1.sbmmzefw.dpn!-!IUUQT="ffffffff09091c3145525d5f4f58455e445a4a42378b", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:13 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
-2015-05-16 09:02:13 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
-2015-05-16 09:02:13 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
-2015-05-16 09:02:13 DEBUG wire:86 -  &lt;&lt; "[0x8]"
-2015-05-16 09:02:13 DEBUG wire:86 -  &lt;&lt; "[0x0]"
-2015-05-16 09:02:13 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &lt;&lt; "[0xa5]Q[0xcb]n[0xdb]0[0x10][0xfc][0x95][0x5][0xf]=[0xd5][0x96][0xf5][0xb0][[0xbb]A[0x81][0xc0][0xe9][0xc3][0x87]6i[0xed][0xd4][0x87]&amp;0V[0xe2][0xda][0xa6]![0x91][0xc2][0x92]R[0xaa][0x6][0xfe][0xf7][0x92][0xb2][\r][0xa4][0xc7][0xa2]'b[0x86]3[0x83][0xdd][0x9d]g[0xf1][0xad]![0xee][0xbe][0x93]mJ'f[0xf0],6[0x8c]e[0xd9]][0xdf]-[0xbe][0xe0][0xc1][0xb0][0xa7]D"^[0xc3][0xb]Z[0xe9][0x13]=[\n]"
-2015-05-16 09:02:13 DEBUG wire:86 -  &lt;&lt; "[0xf4][0x7]f[0xc3][0xd6][0xc3][0x9f][0x8f][0x1e][0xad][0x91][0xb5][0xd2][0xbb][0x1e][0x8b][0x85][0x3]eA[0x1b]([0x8d][0xde][0x11][0x83][0xa6][0x82][0xac]E[0xee][0xc0][0x19][0xc0][0xba]&amp;-[0xe1]A[0xc][0xf][0xf6]A[0x4]f[0xbd][0xf4][0xe1][0xc0]dM[0xc3]^8[0x14]!pe[0x1c][0x96][0xa7][0xe1][0xe6][0xa6][0xd1]a[0xc2][0xd8][0xd3]K[0x87][0xec][0x16]Z[0xd2][0xaf]3q[0x87];Z[0xaa][0xdf][0xe4]a2[0xf6][0xf8]d[0xe9][0xe7][0xf8][0xd7][0x8d]6L[0xdb][0x0][0xf6][0xce][0xd5]v[0x16]E[0xbd]*[0x1e][0xf6][0x8f][0xa4]vX[0x98]*[0xb2]e[0x15]=Qn[0x89][UP[0xd4]&amp;[0xc3]Q[0xe4][0xc8][0xba][0x2]-E[0xe9]8[0xcb]&amp;Y&lt;M[0xa7][0xe9]%[0xef]6?P[0xe1][0xee][0xef][0x17]7!Y[0xa6][[0x8c][0x93]8[0x1f]$H[0xd9] [0x9b][0xe4][0xd9]`[0x9a][0x8e]h[0x90]$r[0x92][0x8d][0x8b]Q[0xfa][0x16][0xb7][0xbd][0xd3][0xf4][0xb6][0x1f][0xc4]V[0x19][0x1d][0x9c][0xf1][0x9b][0xbf][0x13][0xbf]b[0x15]V[0x16][0xcb][0x82]4[0xb2]23[0xb8][0xb6][0x80][0x1a]H*g[0x18][0x16]Px[0x80]R[0xfa][0xdb]?[0x81]c[0xd4][0xb6]D[0x17][0xb2]|[0xca][\r][0xd9][0x82]U[0xed][0xce][0xd1]WR[0xb5][0xef]?[0xa9][0x96]4[0xac][0xf6][0x4][0x8d][\r][0x8d]a[0xab]v[0xe8][0x17][0xb][0xfd]8[0xcf]~6[0x15]A[0xed]o[0xfd]J[0xe7][0xb6]~w[0x15][0x5]S[0xef][0x84][0xf5][0xfe][0xec][0xc][0xdf][0xa1][0xf8][0xd2][0xa0]$[0xf9]R[0xb2][0xba]H*[0xd2][\r][0xe4][0xc8]A&amp;[0x95][0xad]K[0xec].[0xca]0[0xd9]G[0xc3][0x15]:G[0xf2]t[0xae][0xd5][0xbc][0xaf][0xeb]v[0xdd][0xb8][0xae][0xee][0xcd]+_[0xd2][0xdc][0x97]$[0x8e][0x8f][0xc7][0xe3][0x1f][0xee][0xe6][0xe9]N[0xfc][0x2][0x0][0x0]"
-2015-05-16 09:02:13 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@10c85d1f
-2015-05-16 09:02:13 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
-2015-05-16 09:02:13 INFO  RallyUtil:16 - Thread 1 - Closing connection to Rally...
-2015-05-16 09:02:13 DEBUG DefaultClientConnection:176 - Connection 0.0.0.0:50929&lt;-&gt;95.101.178.200:443 closed
-2015-05-16 09:02:13 INFO  RallyUtil:16 - Thread 1 - Connection to Rally Closed
-2015-05-16 09:02:13 INFO  RallyUtil:16 - Thread 1 - Opening connection to Rally...
-2015-05-16 09:02:13 INFO  RallyUtil:16 - Thread 1 - restApi se application name
-2015-05-16 09:02:13 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
-2015-05-16 09:02:13 DEBUG DefaultClientConnectionOperator:174 - Connecting to rally1.rallydev.com:443
-2015-05-16 09:02:13 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:13 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:13 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:13 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:13 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
-2015-05-16 09:02:13 DEBUG DefaultClientConnection:268 - Sending request: GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:13 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:13 DEBUG headers:272 - &gt;&gt; GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:13 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-05h6j8wxdj1ncd13zzp8zv0o7c1.qd-app-054126283[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "ETag: "0b12b5b8f128de8f052a0366eba481228"[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Content-Length: 449[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Date: Sat, 16 May 2015 06:02:14 GMT[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: JSESSIONID=qd-app-05h6j8wxdj1ncd13zzp8zv0o7c1.qd-app-05;Path=/;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c0d45525d5f4f58455e445a4a42378b;path=/;secure;httponly[\r][\n]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:15 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
-2015-05-16 09:02:15 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-05h6j8wxdj1ncd13zzp8zv0o7c1.qd-app-054126283
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; ETag: "0b12b5b8f128de8f052a0366eba481228"
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Content-Length: 449
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Date: Sat, 16 May 2015 06:02:14 GMT
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Set-Cookie: JSESSIONID=qd-app-05h6j8wxdj1ncd13zzp8zv0o7c1.qd-app-05;Path=/;Secure;HttpOnly
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
-2015-05-16 09:02:15 DEBUG headers:259 - &lt;&lt; Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c0d45525d5f4f58455e445a4a42378b;path=/;secure;httponly
-2015-05-16 09:02:15 DEBUG ResponseProcessCookies:118 - Cookie accepted [JSESSIONID="qd-app-05h6j8wxdj1ncd13zzp8zv0o7c1.qd-app-05", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:15 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:15 DEBUG ResponseProcessCookies:118 - Cookie accepted [NSC_vt1.sbmmzefw.dpn!-!IUUQT="ffffffff09091c0d45525d5f4f58455e445a4a42378b", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:15 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
-2015-05-16 09:02:15 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
-2015-05-16 09:02:15 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
-2015-05-16 09:02:15 DEBUG wire:86 -  &lt;&lt; "[0x8]"
-2015-05-16 09:02:15 DEBUG wire:86 -  &lt;&lt; "[0x0]"
-2015-05-16 09:02:15 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
-2015-05-16 09:02:15 DEBUG wire:72 -  &lt;&lt; "[0xa5]Q[0xcb]n[0xdb]0[0x10][0xfc][0x95][0x5][0xf]=[0xd5][0x96][0xf5][0xb0][[0xbb]A[0x81][0xc0][0xe9][0xc3][0x87]6i[0xed][0xd4][0x87]&amp;0V[0xe2][0xda][0xa6]![0x91][0xc2][0x92]R[0xaa][0x6][0xfe][0xf7][0x92][0xb2][\r][0xa4][0xc7][0xa2]'b[0x86]3[0x83][0xdd][0x9d]g[0xf1][0xad]![0xee][0xbe][0x93]mJ'f[0xf0],6[0x8c]e[0xd9]][0xdf]-[0xbe][0xe0][0xc1][0xb0][0xa7]D"^[0xc3][0xb]Z[0xe9][0x13]=[\n]"
-2015-05-16 09:02:15 DEBUG wire:86 -  &lt;&lt; "[0xf4][0x7]f[0xc3][0xd6][0xc3][0x9f][0x8f][0x1e][0xad][0x91][0xb5][0xd2][0xbb][0x1e][0x8b][0x85][0x3]eA[0x1b]([0x8d][0xde][0x11][0x83][0xa6][0x82][0xac]E[0xee][0xc0][0x19][0xc0][0xba]&amp;-[0xe1]A[0xc][0xf][0xf6]A[0x4]f[0xbd][0xf4][0xe1][0xc0]dM[0xc3]^8[0x14]!pe[0x1c][0x96][0xa7][0xe1][0xe6][0xa6][0xd1]a[0xc2][0xd8][0xd3]K[0x87][0xec][0x16]Z[0xd2][0xaf]3q[0x87];Z[0xaa][0xdf][0xe4]a2[0xf6][0xf8]d[0xe9][0xe7][0xf8][0xd7][0x8d]6L[0xdb][0x0][0xf6][0xce][0xd5]v[0x16]E[0xbd]*[0x1e][0xf6][0x8f][0xa4]vX[0x98]*[0xb2]e[0x15]=Qn[0x89][UP[0xd4]&amp;[0xc3]Q[0xe4][0xc8][0xba][0x2]-E[0xe9]8[0xcb]&amp;Y&lt;M[0xa7][0xe9]%[0xef]6?P[0xe1][0xee][0xef][0x17]7!Y[0xa6][[0x8c][0x93]8[0x1f]$H[0xd9] [0x9b][0xe4][0xd9]`[0x9a][0x8e]h[0x90]$r[0x92][0x8d][0x8b]Q[0xfa][0x16][0xb7][0xbd][0xd3][0xf4][0xb6][0x1f][0xc4]V[0x19][0x1d][0x9c][0xf1][0x9b][0xbf][0x13][0xbf]b[0x15]V[0x16][0xcb][0x82]4[0xb2]23[0xb8][0xb6][0x80][0x1a]H*g[0x18][0x16]Px[0x80]R[0xfa][0xdb]?[0x81]c[0xd4][0xb6]D[0x17][0xb2]|[0xca][\r][0xd9][0x82]U[0xed][0xce][0xd1]WR[0xb5][0xef]?[0xa9][0x96]4[0xac][0xf6][0x4][0x8d][\r][0x8d]a[0xab]v[0xe8][0x17][0xb][0xfd]8[0xcf]~6[0x15]A[0xed]o[0xfd]J[0xe7][0xb6]~w[0x15][0x5]S[0xef][0x84][0xf5][0xfe][0xec][0xc][0xdf][0xa1][0xf8][0xd2][0xa0]$[0xf9]R[0xb2][0xba]H*[0xd2][\r][0xe4][0xc8]A&amp;[0x95][0xad]K[0xec].[0xca]0[0xd9]G[0xc3][0x15]:G[0xf2]t[0xae][0xd5][0xbc][0xaf][0xeb]v[0xdd][0xb8][0xae][0xee][0xcd]+_[0xd2][0xdc][0x97]$[0x8e][0x8f][0xc7][0xe3][0x1f][0xee][0xe6][0xe9]N[0xfc][0x2][0x0][0x0]"
-2015-05-16 09:02:15 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@31c6e77a
-2015-05-16 09:02:15 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
-2015-05-16 09:02:15 INFO  RallyUtil:16 - Thread 1 - Closing connection to Rally...
-2015-05-16 09:02:15 DEBUG DefaultClientConnection:176 - Connection 0.0.0.0:50931&lt;-&gt;95.101.178.200:443 closed
-2015-05-16 09:02:15 INFO  RallyUtil:16 - Thread 1 - Connection to Rally Closed
-2015-05-16 09:02:15 INFO  RallyUtil:16 - Thread 1 - Opening connection to Rally...
-2015-05-16 09:02:15 INFO  RallyUtil:16 - Thread 1 - restApi se application name
-2015-05-16 09:02:15 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
-2015-05-16 09:02:15 DEBUG DefaultClientConnectionOperator:174 - Connecting to rally1.rallydev.com:443
-2015-05-16 09:02:17 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:17 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:17 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:17 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:17 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
-2015-05-16 09:02:17 DEBUG DefaultClientConnection:268 - Sending request: GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=200&amp;fetch=FormattedID%2CName&amp;order=ObjectID&amp;query=%28FormattedID+%3D+TC2%29 HTTP/1.1
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=200&amp;fetch=FormattedID%2CName&amp;order=ObjectID&amp;query=%28FormattedID+%3D+TC2%29 HTTP/1.1[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:17 DEBUG headers:272 - &gt;&gt; GET /slm/webservice/v2.0/testcase.js?start=1&amp;pagesize=200&amp;fetch=FormattedID%2CName&amp;order=ObjectID&amp;query=%28FormattedID+%3D+TC2%29 HTTP/1.1
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-083677740[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "ETag: "00690a0f3676700017d72778edc7aee0f"[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Content-Length: 363[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Date: Sat, 16 May 2015 06:02:18 GMT[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: JSESSIONID=qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08;Path=/;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b;path=/;secure;httponly[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:17 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
-2015-05-16 09:02:17 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-083677740
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; ETag: "00690a0f3676700017d72778edc7aee0f"
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Content-Length: 363
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Date: Sat, 16 May 2015 06:02:18 GMT
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Set-Cookie: JSESSIONID=qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08;Path=/;Secure;HttpOnly
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
-2015-05-16 09:02:17 DEBUG headers:259 - &lt;&lt; Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b;path=/;secure;httponly
-2015-05-16 09:02:17 DEBUG ResponseProcessCookies:118 - Cookie accepted [JSESSIONID="qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:17 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:17 DEBUG ResponseProcessCookies:118 - Cookie accepted [NSC_vt1.sbmmzefw.dpn!-!IUUQT="ffffffff09091c3145525d5f4f58455e445a4a42378b", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:17 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
-2015-05-16 09:02:17 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
-2015-05-16 09:02:17 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
-2015-05-16 09:02:17 DEBUG wire:86 -  &lt;&lt; "[0x8]"
-2015-05-16 09:02:17 DEBUG wire:86 -  &lt;&lt; "[0x0]"
-2015-05-16 09:02:17 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "[0xa5][0x90]OO[0x2]1[0x10][0xc5][0xbf]J[0xd3][0xb3][0xec]P[0xb8][0x11][0xd4]d[0xf]*[\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "[0xc8]A[0x9][0x19][0xb6][0x3].YZ2[0x9d][0x5][0x91][0xf0][0xdd]m[0x17]M[0xf4]h&lt;5[0xef][0x97][0xbe][0x97]7[0xef]([0x1f]k[0xa4][0xc3][0x13][0xda][0xba]b[0xd9][0x13]G9'[0xa8][0xaa]C[0x98][0xdf][0xc1][0xda][0x90]C2[0x91][0x17][0xe2][0x7].[0xf5][0x19]G[0x1e][0xdf][0x10][0x19][0xb2]N[0xbe][0xcc][0x9c][0x9a][0x2][0xe9]R[0xaf][0x1a]-s[0x16][0xa5][0x15][0xda][0x88][0xca][0xe8][0x15][0x92][0xd0]X[0xa0][0xb5]@[0x7][0xc1]F[0xc0]v[0x8b]Z[0x89]W[0x19][0xac][0xed][0xab][0xf4]d:r[0xe1][0x82][0xd0][0x9a][0x9a][0xdc][0xc7]@[0xfa][0xc0][0xb1]a[0xa8][0xce][0xe5][0x6][0xa6][0xd6][0xbe]a[0xec][0xf0][0x88][0x81]8[0xd7][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "[0xdf][0xbf][0xc0][0x10]V8*?[0xd0][0xc9]$[0x8a][0x1c]8{[0x9a]"=iN[0xb8][0xf4][0xe2][0x8d]yk{a[0xd8][0xfc][0x8a][0x83][0xe6]Q[0xb8][0xb][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "[0xb3][0x9]m[0xb5][0x9][0xf7][0xb8][0xb0]H[0xbb][0xb2][0xc0]p[0x97][0x4]Q[0xc8]h[0xb9][0x0][0x8b]a[0xda][0xce][0xb2]N[0x16]w[0xd3]n[0xfa][0x9d][0xf7][0xb0]Xc[0xc1][0x93]I~[0xed][0x93]U[0xba][0x84]8[0x89][0x17][0xad][0x4]0ke[0x9d]E[0xd6][0xea][0xa6][0x11][0xb6][0x92]Du[0xb2]v[0x11][0xa5]W[0xb0]l[0x9c][0xa6][0xb1]=#[0xd9][0xd2]h[0xef][0x8c]/'[0xde][0xc3][0xc6][0xdf],G[0x5]j[0xa0][0xd2][0xf4]D[0xdf][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &lt;&lt; "[0xd0][0x2]U[0xc9][0x86]D.[\n]"
-2015-05-16 09:02:17 DEBUG wire:86 -  &lt;&lt; "'@)7[0xfe]^0[0x81][0xb6][0x15][0xb0][0xcf]r)[0xb7][0x86]6[0xc0][0x8c][0xea]\j&lt;hF[0xf9]O[0xe2][0x9c][0xf][0xdb][0xc6]&lt;vS[0xc][0xdc][0x14][0xf2]4;[0x9d]&gt;[0x1][0xae]4[0xe9]pc[0x2][0x0][0x0]"
-2015-05-16 09:02:17 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6d3d292c
-2015-05-16 09:02:17 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
-2015-05-16 09:02:17 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
-2015-05-16 09:02:17 DEBUG ApiKeyClient:432 - Stale connection check
-2015-05-16 09:02:17 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:17 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: JSESSIONID][value: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08][domain: rally1.rallydev.com][path: /][expiry: null] match [(secure)rally1.rallydev.com:443/slm/webservice/v2.0/testset.js]
-2015-05-16 09:02:17 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: NSC_vt1.sbmmzefw.dpn!-!IUUQT][value: ffffffff09091c3145525d5f4f58455e445a4a42378b][domain: rally1.rallydev.com][path: /][expiry: null] match [(secure)rally1.rallydev.com:443/slm/webservice/v2.0/testset.js]
-2015-05-16 09:02:17 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: SUBBUCKETID][value: 46][domain: rally1.rallydev.com][path: /][expiry: null] match [(secure)rally1.rallydev.com:443/slm/webservice/v2.0/testset.js]
-2015-05-16 09:02:17 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:17 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:17 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:17 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
-2015-05-16 09:02:17 DEBUG DefaultClientConnection:268 - Sending request: GET /slm/webservice/v2.0/testset.js?start=1&amp;pagesize=200&amp;fetch=FormattedID%2CName&amp;order=ObjectID&amp;query=%28FormattedID+%3D+TS1%29 HTTP/1.1
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "GET /slm/webservice/v2.0/testset.js?start=1&amp;pagesize=200&amp;fetch=FormattedID%2CName&amp;order=ObjectID&amp;query=%28FormattedID+%3D+TS1%29 HTTP/1.1[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "Cookie: JSESSIONID=qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08; NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b; SUBBUCKETID=46[\r][\n]"
-2015-05-16 09:02:17 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:17 DEBUG headers:272 - &gt;&gt; GET /slm/webservice/v2.0/testset.js?start=1&amp;pagesize=200&amp;fetch=FormattedID%2CName&amp;order=ObjectID&amp;query=%28FormattedID+%3D+TS1%29 HTTP/1.1
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:17 DEBUG headers:275 - &gt;&gt; Cookie: JSESSIONID=qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08; NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b; SUBBUCKETID=46
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-083677792[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "ETag: "0ead247c1bbc9b4ccf32c39ca626e52d0"[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Content-Length: 339[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Date: Sat, 16 May 2015 06:02:18 GMT[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:18 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
-2015-05-16 09:02:18 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-083677792
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; ETag: "0ead247c1bbc9b4ccf32c39ca626e52d0"
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Content-Length: 339
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Date: Sat, 16 May 2015 06:02:18 GMT
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
-2015-05-16 09:02:18 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:18 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x8]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x0]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x95][0x90][0xcb]N[0xc3]0[0x10]E[0xc5][0xf2][0x9a]&lt;[0x1c]B[0x9a][0xb0]C&lt;[0xa4],[0x80]BZ[0xba][0xa0]U[0xe5]$[0xd3][0x92]*[0xb1]#{R[0x8]U[0xff][0x1d];[0x1][0x4][0xb][0x16][0xac]F[0xf7]x[0xe6][0xce][0x1d][0x1f][0xe8]C[0x7][0xaa][0x4][0xdd][0xd5]H[0xcf][0xc9][0x81][0xae][0x15][0xaf][0xeb][0xfe]b[0x9a][0xde][0xf2][0x9d]T[0x6][0xd1][0x80][0x9e][0x90][0x1f][0xb8][0x12]#[0xf6]-[0xbe]VJ*m[0xe4][0xf3][0xca][0xa8][0x5]W[0xa2][0x12][0xdb]A[0xd3][0x14]I[0xa5][0x89][0x90][0xa4][0x96]b[0xb][0x8a][0x8](@k[0xae]z[0x82][0x92][0xf0][0xb6][0x5]Q[0x92]%uwzI-Yd[0xc6][0x9c]([0xd0][0xb2]S[0xa6][0xd1][0xa5][0xd6]p&amp;[0x91][0xd7]c[0xb8]K[0xd9][0x9][0x9b][0x90][0x19][0x9c]!W[0x98][0x8a][0x12][0xde]&gt;[0xc1][0x94]o![0xab][0xde][0xc1][0xc8][0xc0][0xf7][\r][0x18]g[0x86] [0xff]=i[0xad]`c[0xc5][0xb]b[0xab][0xcf]=o[0xe8]b[0xee]PJ[0xd8][0xbb][0x85]l&lt;]7[0xde]+[0xe4][0x1a][0xd4][0xbe]*[0xc0][0xdb][0x7][0xae][0xef]!h[0xd4][0x80][0xde][0xe9]Y[0xc8][0xc2]8[0xc][0xd9][0x84]}[0xd9][0xdd][0xe7];(p&gt;O[0xaf][0xac]q[0x14]3[0x13][0x92][0xe5][0xe][0x8b][0x2][0xdf][0x9]s([0x9d]x[0x93]l[0x9c]8)[0x8b]I[0x14]$&lt;L[0xe2]aR[0xe]cO[0xa0]t%[0x85][0x9d]d[0xd1]o[0xc7];[0xde][0xd8][0x93][0xe9][0xcc][0xac]6[0xff][0x9e][0x1][0xde][0x98]CL[0x8b])[\r]G[0x84]r[0xdc]8[0xcb][0x86]([0xb6][0xaf][0xb1]o[0xbf]_[0xc][0xa6][0xc7][0xd5][0xf1][0xf8][0x1] [0xfe]a[0x4][0x1b][0x2][0x0][0x0]"
-2015-05-16 09:02:18 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@102d0abe
-2015-05-16 09:02:18 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
-2015-05-16 09:02:18 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
-2015-05-16 09:02:18 DEBUG ApiKeyClient:432 - Stale connection check
-2015-05-16 09:02:18 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:18 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: JSESSIONID][value: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08][domain: rally1.rallydev.com][path: /][expiry: null] match [(secure)rally1.rallydev.com:443/slm/webservice/v2.0/testcaseresult/create.js]
-2015-05-16 09:02:18 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: NSC_vt1.sbmmzefw.dpn!-!IUUQT][value: ffffffff09091c3145525d5f4f58455e445a4a42378b][domain: rally1.rallydev.com][path: /][expiry: null] match [(secure)rally1.rallydev.com:443/slm/webservice/v2.0/testcaseresult/create.js]
-2015-05-16 09:02:18 DEBUG RequestAddCookies:167 - Cookie [version: 0][name: SUBBUCKETID][value: 46][domain: rally1.rallydev.com][path: /][expiry: null] match [(secure)rally1.rallydev.com:443/slm/webservice/v2.0/testcaseresult/create.js]
-2015-05-16 09:02:18 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:18 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:18 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:18 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
-2015-05-16 09:02:18 DEBUG DefaultClientConnection:268 - Sending request: POST /slm/webservice/v2.0/testcaseresult/create.js?fetch=true HTTP/1.1
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "POST /slm/webservice/v2.0/testcaseresult/create.js?fetch=true HTTP/1.1[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "Content-Length: 177[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "Content-Type: text/plain; charset=UTF-8[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "Cookie: JSESSIONID=qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08; NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b; SUBBUCKETID=46[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:18 DEBUG headers:272 - &gt;&gt; POST /slm/webservice/v2.0/testcaseresult/create.js?fetch=true HTTP/1.1
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; Content-Length: 177
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; Content-Type: text/plain; charset=UTF-8
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:18 DEBUG headers:275 - &gt;&gt; Cookie: JSESSIONID=qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-08; NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c3145525d5f4f58455e445a4a42378b; SUBBUCKETID=46
-2015-05-16 09:02:18 DEBUG wire:86 -  &gt;&gt; "{"testcaseresult":{"TestSet":"35414844171","TestCase":"35446419393","Date":"2015-05-16T09:02:18.313Z","Verdict":"Fail","Tester":"","Build":"Version: 3.4.2","Notes":"Auto test"}}"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-083677809[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Content-Length: 717[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Date: Sat, 16 May 2015 06:02:19 GMT[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:18 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
-2015-05-16 09:02:18 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-081visf9h1m5h6xote94i7ulhw8.qd-app-083677809
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Content-Length: 717
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Date: Sat, 16 May 2015 06:02:19 GMT
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
-2015-05-16 09:02:18 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
-2015-05-16 09:02:18 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:18 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x8]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x0]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "[0xc5][0x95]Mo[0xdb]0[0xc][0x86][0xff][0x8a][0xe0][0xf3]dK[0xb6][0xfc][0x95][0xd3][0xb2]v[0x5]rX74[0xed][\n]"
-2015-05-16 09:02:18 DEBUG wire:72 -  &lt;&lt; "l[0x1d][\n]"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "Y[0x92]Sg[0x8e][0x1d]Hr[0x83][0xae][0xc8][0x1f][0xa5]|4[0xdd][0xd2][0xcb][0xe][0xd9][0xc9][0xe0]kI$[0x1f][0x91][0xd4]sp[0xa6][0x15][0xb7][0xea]J[0x99][0xa1][0xb5][0xc1][0x8]=[0x7][0xf7][0x9a][0xb7][0xed][0xd3][0xf8][0xcb][0xe4][0x13][0x9f][0xf7][0x1a][0xa4] [0xe][0xde][0xa1][0x3][0xb9][0xe9]62q[0xf2]G[0xad]{m[0xc0][0xfc][0xfe][0x3][0xac][[0xae][0xbb][0xa6][0x9b]y;[0x98]X[0xd4][0x18][0xd4][0xf5][0xa8][0xed][0xbb][0x99][0xd2][0xa8]SB[0x19][0xc3][0xf5][0x13][0xb2]=[0xe2][0xcb][0xa5][0xea]$[0xba][0xb][0xc2][0xb9][0xb9][0xb][0x9c]r;[0x85][0xc3][0x91]V[0xa6][0x1f]4,[0xc][0x3]w[0xe0][0xe7]j[0xae][0xc4][0xbf][0xc4]u[0xaf]U[0xed][0x8c][0x7]k[0x97]f[0x14]E~[0x15][\r][0xfd]G[0xaa][0xc7]P[0xf4][0x8b][0xc8][0xb4][0x8b]h[0xa5]*[0xa3][0xf4]c#T[0xf4][0x18][0x87]$[0xb2][0xca]X[0xc1]A[0xf2]@[0xa2]$[0xcd]s[0xc2]H[0xc2][0xb2]lw[0xea]&amp;[0xa4][0x9b][0x9b][0xc9][0xb9];?[0x8f]%[0x97][0x85]$[0x98][0xf2][0x8a]aV[0x16]1.d.[0xb1]"[0x9][0xcd]EJ[0xa4]d[0xb9][0xdf][0xd9][0xfb]m_[0x95]6M[0xdf][0xb9][0x9d][0xd4][0xc9][0x9e]&gt;[0x8][0xe7]p[0x7]&gt;%BSLRL[0xb3]k[0x92][0x8d]H&lt;[0xa2]e[0x8][0xd2]7[0xc4][0xe6][0xaa][0xe4][0xd8][0xf1][0x8][0xe6][0x83][0xb1][0x0]w[0x15][0xec])[0xf9][0x80][0xe][0x2][0x86][0x1f][w[0x13][0xb9]w8[0x1d]*#t[0xb3][0xb4][0x9b](N[0x85][0xd5][0x1c][0xb8][0x5][0xa8][0x9]K[0xf3]"K[0xd2][0xe2]8T!*[0x91]+[0x95]a[0xe6]P[0xb2][0xba]$[0x98]'[0x84]`[0xc9][0x4][0xad][0xea][0xbc]f,[0xe1][0xaf]w^[0xf2][0x85][0xe7]w[0xad][0x1b][0xde]"[0x8c]$[0xd7][0xcd]`[0xaa][0xfe][0xd7][0x8c][0xbf][0x9f]-x[0xd3][0xba][0xc8][0xfc][0x16][0xfb][0xb4][0xf4]+_[0x81]X[0xbb][0xda][0xed][0xf5]O[0xb3][0xe4]B[0x9d][0x10][0xcb]j[0xe7]s[0xcf]$%[0xe4][0x8d]B[0xcb][0x18]S[0x19]I0[0x8d]i[0xc][0x85]V[0xb][0xcc][0xc1][0x6][0xb3] [0x5]W[0x9c][0xf0][0xbc]8[0xce]d[0x9f][0x18][0xa2][0xaf][0x8][0xbc]$[0xec][0xd2][0x1f][[0xcb][0xc5][0xc3]Bu[0xd6][0x9c][0x10][0xc0]5[0xb4][0xdb][0x19][0xb4][0xdb][0xd5]_[0xed][0x16][0x1d][0x6]t[0x18][0xf6][0x8b][0xee][0x1b][0xa8][0x1f]:[0xd7][0xf][0xc4][0xe5][0xf0]ahZ_[0xea][0xdb][0xba][0x87]v[0x8]Y[0xe8][0xe3]&gt;[0xd6]`[0xa5]o[0xb0]"Lh"
-2015-05-16 09:02:18 DEBUG wire:86 -  &lt;&lt; "[0xe2][0x1b][0xec]|[0xd0]|[0xdb][0x17][0xdd][0xd0][0xb6][0xa0]\[0xf6]0[0xf][0xbc][0xd3][0x1]&amp;[0x94][0x9b][\r]n[0xdd].[0xe8][0xff]0[0x96][0x80][0x10]c[0x19][0xa3]eR&amp;[0xc7][0xeb]D&amp;5[0x87][0x12][0xa9]p[0xcc][0x15][0xc][0xa4][0xc][0xa6]R[0x99][0x10][0x85][0xe3]Xf,[0x15]$)x}[0xbc]N[0xa6]Bu[0xd0]6[0xfd][0x8][0x8d][\r][0xe2][0x1d]R[0xb2][0xb1][0xbd]F[0x13]$[0xc0][0xe0]R[0xc2][0x0]_![0xab]yg[0xda][\r][0xa6][0xc3][[0xd9]3Yo[0x1]M[0xd5][0xa9][0xc7][0xb6]Q[0xae][0x80][0x18]e[0x5]c4[0xa7][0xc7][0xf1]d[0x5][0x8d][0x9][0x1]&lt;4[0x8b][0x9]f[0x95][0x92][0xb8][0xa8][0xcb][0x1a][0x17][0xa5][0x14]y[0x16][0x97][0x1c]F[0xf8][0x1b][0xa3][0x5]\[0xc0][0xdb][0x6]y]@[0xc0][0xe6][0xee][0xd2][0xdd][0xa5][0xae][0xf4]K[0x5]A%[0xca][0xc6][0xbf]`[0xc1][0x5][0x8c][0xa1][0xa3][0xcc][0xb6][0x8f][0xef]z[0xbd][0xfe][\r] [0xe6][0xe1][0xc2][0x8f][0x7][0x0][0x0]"
-2015-05-16 09:02:18 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@41038962
-2015-05-16 09:02:18 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
-2015-05-16 09:02:18 INFO  RallyUtil:16 - Thread 1 - Rally Update possibly successfull.
-2015-05-16 09:02:18 ERROR RallyUtil:24 - Thread 1 - The test with name Scenario: As an editor I can add new translation has FAILED and Rally was updated according
-2015-05-16 09:02:18 INFO  RallyUtil:16 - Thread 1 - Opening connection to Rally...
-2015-05-16 09:02:18 INFO  RallyUtil:16 - Thread 1 - restApi se application name
-2015-05-16 09:02:18 DEBUG BasicClientConnectionManager:160 - Get connection for route {s}-&gt;https://rally1.rallydev.com:443
-2015-05-16 09:02:18 DEBUG DefaultClientConnectionOperator:174 - Connecting to rally1.rallydev.com:443
-2015-05-16 09:02:19 DEBUG RequestAddCookies:122 - CookieSpec selected: default
-2015-05-16 09:02:19 DEBUG RequestAuthCache:76 - Auth cache not set in the context
-2015-05-16 09:02:19 DEBUG RequestTargetAuthentication:78 - Target auth state: UNCHALLENGED
-2015-05-16 09:02:19 DEBUG RequestProxyAuthentication:87 - Proxy auth state: UNCHALLENGED
-2015-05-16 09:02:19 DEBUG ApiKeyClient:683 - Attempt 1 to execute request
-2015-05-16 09:02:19 DEBUG DefaultClientConnection:268 - Sending request: GET /slm/webservice/v2.0/defect.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "GET /slm/webservice/v2.0/defect.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVersion: 1.2[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationName: InsertNameHereProject[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "X-RallyIntegrationVendor: Rally Software, Inc.[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "Accept-Encoding: gzip,deflate[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "Host: rally1.rallydev.com[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "Connection: Keep-Alive[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &gt;&gt; "[\r][\n]"
-2015-05-16 09:02:19 DEBUG headers:272 - &gt;&gt; GET /slm/webservice/v2.0/defect.js?start=1&amp;pagesize=25&amp;fetch=FormattedID%2CName%2CState%2CDescription&amp;order=Name+ASC%2CObjectID&amp;query=%28Name+%3D+%22Scenario%3A+As+an+editor+I+can+add+new+translation%22%29 HTTP/1.1
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; zsessionid: _teNVYyPxRB6BteXgZHTiLuU2I3ubfU7CpphnweRfblQ
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationLibrary: Rally Rest API for Java v2.1.1
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVersion: 1.2
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationName: InsertNameHereProject
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; X-RallyIntegrationVendor: Rally Software, Inc.
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; Accept-Encoding: gzip,deflate
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; Host: rally1.rallydev.com
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; Connection: Keep-Alive
-2015-05-16 09:02:19 DEBUG headers:275 - &gt;&gt; User-Agent: Apache-HttpClient/4.4.1 (Java/1.7.0_80-ea)
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "HTTP/1.1 200 OK[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "RallyRequestID: qd-app-03npd45gjpjvtv16nrkvkbsjo6i.qd-app-034278098[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Expires: Thu, 01 Jan 1970 00:00:00 GMT[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Content-Type: text/javascript;  charset=utf-8[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "ETag: "017d0b7c6fa4ca4622497dbe18d69c8ae"[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Vary: Accept-Encoding[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Content-Encoding: gzip[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Cache-Control: private,max-age=0,must-revalidate[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Content-Length: 455[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Date: Sat, 16 May 2015 06:02:20 GMT[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Connection: keep-alive[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: JSESSIONID=qd-app-03npd45gjpjvtv16nrkvkbsjo6i.qd-app-03;Path=/;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c0745525d5f4f58455e445a4a42378b;path=/;secure;httponly[\r][\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "[\r][\n]"
-2015-05-16 09:02:19 DEBUG DefaultClientConnection:253 - Receiving response: HTTP/1.1 200 OK
-2015-05-16 09:02:19 DEBUG headers:256 - &lt;&lt; HTTP/1.1 200 OK
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; RallyRequestID: qd-app-03npd45gjpjvtv16nrkvkbsjo6i.qd-app-034278098
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Content-Type: text/javascript;  charset=utf-8
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; ETag: "017d0b7c6fa4ca4622497dbe18d69c8ae"
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Vary: Accept-Encoding
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Content-Encoding: gzip
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; P3P: CP="NON DSP COR CURa PSAa PSDa OUR NOR BUS PUR COM NAV STA"
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Cache-Control: private,max-age=0,must-revalidate
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Content-Length: 455
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Date: Sat, 16 May 2015 06:02:20 GMT
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Connection: keep-alive
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Set-Cookie: JSESSIONID=qd-app-03npd45gjpjvtv16nrkvkbsjo6i.qd-app-03;Path=/;Secure;HttpOnly
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Set-Cookie: SUBBUCKETID=46;Path=/;Domain=rally1.rallydev.com;Secure;HttpOnly
-2015-05-16 09:02:19 DEBUG headers:259 - &lt;&lt; Set-Cookie: NSC_vt1.sbmmzefw.dpn!-!IUUQT=ffffffff09091c0745525d5f4f58455e445a4a42378b;path=/;secure;httponly
-2015-05-16 09:02:19 DEBUG ResponseProcessCookies:118 - Cookie accepted [JSESSIONID="qd-app-03npd45gjpjvtv16nrkvkbsjo6i.qd-app-03", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:19 DEBUG ResponseProcessCookies:118 - Cookie accepted [SUBBUCKETID="46", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:19 DEBUG ResponseProcessCookies:118 - Cookie accepted [NSC_vt1.sbmmzefw.dpn!-!IUUQT="ffffffff09091c0745525d5f4f58455e445a4a42378b", version:0, domain:rally1.rallydev.com, path:/, expiry:null]
-2015-05-16 09:02:19 DEBUG ApiKeyClient:510 - Connection can be kept alive indefinitely
-2015-05-16 09:02:19 DEBUG wire:86 -  &lt;&lt; "[0x1f]"
-2015-05-16 09:02:19 DEBUG wire:86 -  &lt;&lt; "[0x8b]"
-2015-05-16 09:02:19 DEBUG wire:86 -  &lt;&lt; "[0x8]"
-2015-05-16 09:02:19 DEBUG wire:86 -  &lt;&lt; "[0x0]"
-2015-05-16 09:02:19 DEBUG wire:86 -  &lt;&lt; "[0x0][0x0][0x0][0x0][0x0][0x3]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "[0xa5]R[0xcb]n[0xdb]0[0x10][0xfc][0x95][0x5][0xf]=[0xd5][0x96][0x1f][0x91][0x15][0xbb]A[0x81][0xa0]N[[0x1f][0xda][0xa4][0xb5]S[0x1f][0x9a] X[0x89]k[0x9b][0x86]D[\n]"
-2015-05-16 09:02:19 DEBUG wire:72 -  &lt;&lt; "KJ[0xa9][0x1a][0xf8][0xdf]K[0xd2]6[0x90][0x1e][0x8b][0x9e][0x88][0x99][0x9d][0x19][0xec][0x83]/[0xe2][C[0xdc]}'[0xdb][0x94]N[0xcc][0xe0]E&lt;1[0x96]ew}[0xb7][0xf8][0x82]{[0xc3][0x9e][0x12]#[0xf1][0x16]^[0xd1]J[0x1f][0xe9]A[0xa0]o[0x98][\r][[0xf]&gt;z[0xb4]F[0xd6]Jo#[0x16][0xb][0x7][0xca][0x82]6P[0x1a][0xbd]%[0x6]M[0x5]Y[0x8b][0xdc][0x81]3[0x80]uMZ[0xc2][0x83][0xe8][0xef][0xed][0x83][0x8][0xcc]z[0xe9][0xc3][0x81][0xc9][0x9a][0x86][0xbd][0xb0]/B[0xe0][0xca]8,[0x8f][0xcd]}0[0x8d][0xe][0x1d][0xe]=[0xbd]t[0xc8]n[0xa1]%[0xfd]:[0x11]w[0xb8][0xa5][0xa5][0xfa]M[0x1e][0x8e]R[0x8f][0x8f][0x96][0xd8][0xc7][0xbf]N[0xf4][0xc4][0xb4][0x9]`[0xe7]\mgI[0x12]U[0xc3]~|$[0xb5][0xfd][0xc2]T[0x89]-[0xab][0xe4][0x99]rK[0xdc][0xaa][0x82][0x92]v[0xd4][0x1f]$[0x92]6T[0xb8]d[0x9c]N&amp;[0xd9]`p1[0x99]^[0x9e][0xd3]n[0xf3][0xbd][0xaf][0xdc][0xdf]/[0xe6]![0x97][0xd2]l8[0x96]8[0xed][0xa5]T[0xe4][0xbd][0x8b]4[0xcb]z[0x97][0xd3][0xd1][0xa6][0xb7][0x19][0xc]'[0xd9]H[0x8e][0xd3]M6[0x8d]N[0x13]m?[0x88][0xad]2:8[0xd3][0xbf][0x3][0xbf]b[0x15][0xe6][0x15][0xcb][0x82]4[0xb2]23[0xb8][0xb6][0x80][0x1a]H*g[0x18][0x16]Px[0x80]R[0xfa][0xc5]?[0x83]c[0xd4][0xb6]D[0x17][0xa2]|[0xca][0x9c]l[0xc1][0xaa]v[0xa7][0xe4]+[0xa9][0xda][0xf7][0x9f]TK[0x1a]V;[0x82][0xc6][0x86]sa[0xab][0xb6][0xe8][0xc8][0x86][0xe3]8[0xcf]~6[0x15]A[0xed][0x17][0xfd]F[0xe7][0xb6]~w[0x95][0x4]St[0xc2]zwr[0x86]r[0xb8]ziP[0x92]|-Y[0x9d]%[0x15][0xe9][0x6]r[0xe4] [0x93][0xca][0xd6]%vge[0xe8][0xec][0xa3][0xe1][\n]"
-2015-05-16 09:02:19 DEBUG wire:86 -  &lt;&lt; "[0x9d]#y[0xdc][0xd6][0xfc]f[0x1c][0xd8][0xff][0x99][0xd5][0x16][0x17][0xcd][0xb7][0xfe][0xcb][0xc5][0x15][0xba][0xae][0x8e][0xc4]&lt;[0x9e]L[0x1c][0x1e][0xf][0x87]?[0xf8]W?[0x13][0x8][0x3][0x0][0x0]"
-2015-05-16 09:02:19 DEBUG BasicClientConnectionManager:198 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@40beb5f0
-2015-05-16 09:02:19 DEBUG BasicClientConnectionManager:223 - Connection can be kept alive indefinitely
-2015-05-16 09:02:19 INFO  RallyUtil:16 - Thread 1 - Closing connection to Rally...
-2015-05-16 09:02:19 DEBUG DefaultClientConnection:176 - Connection 0.0.0.0:50936&lt;-&gt;95.101.178.200:443 closed
-2015-05-16 09:02:19 INFO  RallyUtil:16 - Thread 1 - Connection to Rally Closed
-2015-05-16 09:02:19 ERROR RallyUtil:24 - Thread 1 - New Defect added to Rally : null</msg>
-<msg timestamp="20150516 09:02:19.907" level="INFO">TEST REF: "https://rally1.rallydev.com/slm/webservice/v2.0/testcase/35446419393"</msg>
-<status status="PASS" endtime="20150516 09:02:19.907" starttime="20150516 09:02:12.184"></status>
+<status status="PASS" endtime="20150516 10:37:01.226" starttime="20150516 10:37:01.216"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="FAIL" critical="yes" endtime="20150516 09:02:19.907" starttime="20150516 09:02:07.384">Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0.</status>
-</test>
-<test id="s1-s1-t2" name="Different argument names">
-<kw type="kw" name="The result of 2 should be 2">
-<doc></doc>
-<arguments>
-</arguments>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${calculation}</arg>
-<arg>${expected}</arg>
-</arguments>
-<msg timestamp="20150516 09:02:19.954" level="INFO">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<msg timestamp="20150516 09:02:19.954" level="INFO">Darius - LOG Message</msg>
-<status status="PASS" endtime="20150516 09:02:19.969" starttime="20150516 09:02:19.954"></status>
-</kw>
-<status status="PASS" endtime="20150516 09:02:19.969" starttime="20150516 09:02:19.938"></status>
-</kw>
-<kw type="kw" name="The result of 3 should be 3">
-<doc></doc>
-<arguments>
-</arguments>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${calculation}</arg>
-<arg>${expected}</arg>
-</arguments>
-<msg timestamp="20150516 09:02:20.000" level="INFO">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<msg timestamp="20150516 09:02:20.016" level="INFO">Darius - LOG Message</msg>
-<status status="PASS" endtime="20150516 09:02:20.016" starttime="20150516 09:02:20.000"></status>
-</kw>
-<status status="PASS" endtime="20150516 09:02:20.032" starttime="20150516 09:02:19.985"></status>
-</kw>
-<kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Test Status">
-<doc></doc>
-<arguments>
-<arg>${TEST STATUS}</arg>
-<arg>${TEST NAME}</arg>
-</arguments>
-<msg timestamp="20150516 09:02:20.857" level="FAIL">IndexOutOfBoundsException: Index: 0, Size: 0</msg>
-<status status="FAIL" endtime="20150516 09:02:20.873" starttime="20150516 09:02:20.047">IndexOutOfBoundsException: Index: 0, Size: 0</status>
-</kw>
-<doc></doc>
-<tags>
-</tags>
-<status status="FAIL" critical="yes" endtime="20150516 09:02:20.873" starttime="20150516 09:02:19.922">Teardown failed:
-IndexOutOfBoundsException: Index: 0, Size: 0</status>
+<status status="FAIL" critical="yes" endtime="20150516 10:37:01.231" starttime="20150516 10:36:56.485">Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0.</status>
 </test>
 <kw type="teardown" name="com.insertNameHere.keyWords.CustomKey.Close Driver">
 <doc></doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20150516 09:02:20.982" starttime="20150516 09:02:20.904"></status>
+<status status="PASS" endtime="20150516 10:37:04.337" starttime="20150516 10:37:04.303"></status>
 </kw>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20150516 09:02:20.982" starttime="20150516 09:02:00.736"></status>
+<status status="FAIL" endtime="20150516 10:37:04.343" starttime="20150516 10:36:49.890"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="FAIL" endtime="20150516 09:02:21.013" starttime="20150516 09:02:00.267"></status>
+<status status="FAIL" endtime="20150516 10:37:04.370" starttime="20150516 10:36:49.325"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2">Critical Tests</stat>
-<stat pass="0" fail="2">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" id="s1" fail="2" name="SeleniumTestCases">SeleniumTestCases</stat>
-<stat pass="0" id="s1-s1" fail="2" name="SeleniumCaseTwo">SeleniumTestCases.SeleniumCaseTwo</stat>
+<stat pass="0" id="s1" fail="1" name="SeleniumTestCases">SeleniumTestCases</stat>
+<stat pass="0" id="s1-s1" fail="1" name="SeleniumCaseOne">SeleniumTestCases.SeleniumCaseOne</stat>
 </suite>
 </statistics>
 <errors>

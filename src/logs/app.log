@@ -1,0 +1,74 @@
+[INFO] 2015-05-16 10:32:12,805 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser: firefox and URL: http://localhost:4444/wd/hub
+[WARN] 2015-05-16 10:32:12,852 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - Start suite values : 
+[WARN] 2015-05-16 10:32:12,852 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - SeleniumCaseOne ''
+
+[INFO] 2015-05-16 10:32:12,868 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver setup initiated...
+[INFO] 2015-05-16 10:32:18,396 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver initiated successfully....
+[WARN] 2015-05-16 10:32:18,505 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - Start test values : 
+[WARN] 2015-05-16 10:32:18,505 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - - Scenario: As an editor I can add new translation '' [ 
+[WARN] 2015-05-16 10:32:18,505 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 -  ] :: 
+[INFO] 2015-05-16 10:32:18,552 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Accessing the URL: http://www.emag.ro
+[ERROR] 2015-05-16 10:32:23,359 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: FAIL
+[ERROR] 2015-05-16 10:32:23,360 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation
+[INFO] 2015-05-16 10:32:23,392 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:32:23,410 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:32:24,423 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Closing connection to Rally...
+[INFO] 2015-05-16 10:32:24,425 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Connection to Rally Closed
+[INFO] 2015-05-16 10:32:24,426 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:32:24,428 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:32:24,926 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Closing connection to Rally...
+[INFO] 2015-05-16 10:32:24,926 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Connection to Rally Closed
+[INFO] 2015-05-16 10:32:24,941 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:32:24,941 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:32:26,306 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Rally Update possibly successfull.
+[ERROR] 2015-05-16 10:32:26,309 com.insertNameHere.rallyUtils.RallyUtil logError - Thread 1 - The test with name Scenario: As an editor I can add new translation has FAILED and Rally was updated according
+[INFO] 2015-05-16 10:32:26,309 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:32:26,310 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:32:26,795 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Closing connection to Rally...
+[INFO] 2015-05-16 10:32:26,810 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Connection to Rally Closed
+[ERROR] 2015-05-16 10:32:26,810 com.insertNameHere.rallyUtils.RallyUtil logError - Thread 1 - New Defect added to Rally : null
+[WARN] 2015-05-16 10:32:26,810 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - End test values : 
+[WARN] 2015-05-16 10:32:26,810 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - FAIL: Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0.
+
+[INFO] 2015-05-16 10:32:26,873 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Close Browser
+[WARN] 2015-05-16 10:32:26,904 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - End suite values : 
+[WARN] 2015-05-16 10:32:26,904 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - FAIL
+
+
+[INFO] 2015-05-16 10:36:50,259 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Setting variables Browser: firefox and URL: http://localhost:4444/wd/hub
+[WARN] 2015-05-16 10:36:50,306 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - Start suite values : 
+[WARN] 2015-05-16 10:36:50,306 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - SeleniumCaseOne ''
+
+[INFO] 2015-05-16 10:36:50,322 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver setup initiated...
+[INFO] 2015-05-16 10:36:56,391 com.insertNameHere.selenium.utils.InsertNameHereSeleniumDriver logInfo - Thread 1 - Webdriver initiated successfully....
+[WARN] 2015-05-16 10:36:56,503 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - Start test values : 
+[WARN] 2015-05-16 10:36:56,503 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - - Scenario: As an editor I can add new translation '' [ 
+[WARN] 2015-05-16 10:36:56,503 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 -  ] :: 
+[INFO] 2015-05-16 10:36:56,535 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Accessing the URL: http://www.emag.ro
+[ERROR] 2015-05-16 10:37:01,225 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The status of the test is: FAIL
+[ERROR] 2015-05-16 10:37:01,226 com.insertNameHere.keyWords.CustomKey logError - Thread 1 - The test name is: Scenario: As an editor I can add new translation
+[INFO] 2015-05-16 10:37:01,253 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:37:01,270 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:37:02,115 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Closing connection to Rally...
+[INFO] 2015-05-16 10:37:02,117 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Connection to Rally Closed
+[INFO] 2015-05-16 10:37:02,118 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:37:02,119 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:37:02,604 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Closing connection to Rally...
+[INFO] 2015-05-16 10:37:02,607 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Connection to Rally Closed
+[INFO] 2015-05-16 10:37:02,610 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:37:02,612 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:37:03,781 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Rally Update possibly successfull.
+[ERROR] 2015-05-16 10:37:03,784 com.insertNameHere.rallyUtils.RallyUtil logError - Thread 1 - The test with name Scenario: As an editor I can add new translation has FAILED and Rally was updated according
+[INFO] 2015-05-16 10:37:03,785 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Opening connection to Rally...
+[INFO] 2015-05-16 10:37:03,786 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - restApi se application name
+[INFO] 2015-05-16 10:37:04,287 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Closing connection to Rally...
+[INFO] 2015-05-16 10:37:04,288 com.insertNameHere.rallyUtils.RallyUtil logInfo - Thread 1 - Connection to Rally Closed
+[ERROR] 2015-05-16 10:37:04,289 com.insertNameHere.rallyUtils.RallyUtil logError - Thread 1 - New Defect added to Rally : null
+[WARN] 2015-05-16 10:37:04,292 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - End test values : 
+[WARN] 2015-05-16 10:37:04,293 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - FAIL: Keyword 'com.insertNameHere.keyWords.CustomKey.The Page Is Loaded' expected 1 argument, got 0.
+
+[INFO] 2015-05-16 10:37:04,336 com.insertNameHere.keyWords.CustomKey logInfo - Thread 1 - Close Browser
+[WARN] 2015-05-16 10:37:04,362 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - End suite values : 
+[WARN] 2015-05-16 10:37:04,363 com.insertNameHere.robotFrameworkUtils.listeners.RobotCustomJavaListener logWarning - Thread 1 - FAIL
+
+

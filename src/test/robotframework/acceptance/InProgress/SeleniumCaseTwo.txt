@@ -9,7 +9,7 @@ Suite Postcondition		Close driver
 
 Scenario: As an editor I can add new translation
 	Given The ${homePage} is accessed by the user
-	When The page is loaded
+	When The page is loaded  ${HOME_PAGE_TITLE} 
 	Then The menu bar is displayed
 	
 Different argument names
