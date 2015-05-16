@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" skip="0" tests="2" name="SeleniumTestCases">
-<testcase classname="SeleniumTestCases.SeleniumCaseOne" time="0" name="Scenario: As an editor I can add new translation">
-</testcase>
-<testcase classname="SeleniumTestCases.SeleniumCaseOne" time="0" name="Scenario: As an editor I can add the newsest translation test">
-</testcase>
-</testsuite>

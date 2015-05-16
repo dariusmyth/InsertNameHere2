@@ -1,0 +1,1 @@
+java -Dwebdriver.chrome.driver="C:\Darius\Jar\selenium-2.45.0\chromedriver.exe" -jar selenium-server-standalone-2.45.0.jar -role webDriver -hub http://localhost:4444/grid/register -browser "browserName=chrome,platform=WINDOWS,version=12" -port 5556

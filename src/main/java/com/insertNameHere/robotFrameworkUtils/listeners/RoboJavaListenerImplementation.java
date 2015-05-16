@@ -18,19 +18,14 @@ public class RoboJavaListenerImplementation implements RobotListenerGeneralInter
 	public void endSuite(String name, Map attributes) {
 		System.out.println("Darius - End Suite");
 		
-		
-
 	}
 
 	@Override
 	public void startTest(String name, Map attributes) {
+		
 		System.out.println("Darius - Start Test");
 	}
 
-	@Override
-	public void endTest(String name, Map attributes) {
-		System.out.println("Darius - End Test");
-	}
 
 	@Override
 	public void startKeyword(String name, Map attributes) {
@@ -78,6 +73,13 @@ public class RoboJavaListenerImplementation implements RobotListenerGeneralInter
 	@Override
 	public void close() {
 		System.out.println("Darius - Close");
+	}
+
+	@Override
+	public void endTest(String name, Map attributes) {
+		
+		
+		
 	}
 
 }

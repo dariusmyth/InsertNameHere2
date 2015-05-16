@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table.lamp {
+    width:100%;
+    border:1px solid #d4d4d4;
+}
+table.lamp th, td { 
+    padding:10px;
+}
+table.lamp th {
+    height:50px;
+    width:40px;
+}
+header {
+    background-color:#880000;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#FFFFFF;
+    height:100px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:450px;
+    float:left;
+    padding:10px;
+	 	 
+}
+footer {
+    background-color:#880000;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Test Verdict');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['FAILED', 25],
+          ['PASSED', 70]
+          
+        ]);
+
+        // Set chart options
+        var options = {'title':'',
+                       'width':600,
+                       'height':400};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+<header>
+<table class="lamp">
+<tr>
+  <th>
+   <img src="w3schools.jpg" alt="W3Schools.com" width="54" height="50">
+  </th>
+  <td>
+    <h1>Project Report</h1>
+  </td>
+</tr>
+</table>
+</header>
+
+<nav>
+<div id="linkToReport">
+	<a href=file:///D:\darius\BitBucketRepo\InsertNameHereProject\reports\report.html>Robot Report</a>
+	</div>
+<div id="linkToLog">
+	<a href=file:///D:\darius\BitBucketRepo\InsertNameHereProject\reports\report.html>Log Report</a>
+	</div>
+</nav>
+
+<section>
+<h1>Test Results</h1>
+<p>
+<div id="chart_div"></div>
+</p>
+
+</section>
+
+<footer>
+Copyright @Darius
+</footer>
+
+</body>
+</html>

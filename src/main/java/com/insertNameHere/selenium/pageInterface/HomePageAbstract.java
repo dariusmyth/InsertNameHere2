@@ -1,14 +1,12 @@
 package com.insertNameHere.selenium.pageInterface;
 
-import org.openqa.selenium.WebDriver;
-
+import com.insertNameHere.selenium.utils.InsertNameHereRemoteDriver;
 import com.insertNameHere.selenium.utils.SeleniumCommonMethods;
 
 public abstract class HomePageAbstract extends SeleniumCommonMethods implements HomePageInterface {
 
-	private WebDriver driver;
-	public HomePageAbstract(WebDriver driver) {
-		this.driver=driver;
+	public HomePageAbstract(InsertNameHereRemoteDriver driver) {
+		super(driver);
 	}
 
 	
